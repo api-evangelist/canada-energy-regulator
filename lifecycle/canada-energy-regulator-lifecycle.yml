@@ -1,0 +1,88 @@
+generated: '2026-07-27'
+method: searched
+source: live probes 2026-07-27
+note: The Canada Energy Regulator publishes no API lifecycle policy of any kind — no versioning statement, no deprecation
+  policy, no sunset commitment, no SLA and no status page. Nothing below is a policy the CER has stated; it is the
+  version surface each upstream product happens to expose, plus the dataset update cadences the CER declares in its
+  own CKAN metadata, which are the closest thing to a published freshness commitment it makes.
+versioning:
+  policy_published: false
+  scheme: per upstream product, not CER-controlled
+  surfaces:
+  - surface: CER ArcGIS Online feature services
+    version: currentVersion 12
+    scheme: vendor build number in the service descriptor
+  - surface: CER Assessments MapServer (Federal Geospatial Platform)
+    version: currentVersion 10.81
+    scheme: vendor build number
+  - surface: OGC WMS
+    version: 1.3.0
+    scheme: required version= query parameter
+  - surface: Open Government Portal CKAN
+    version: v3
+    scheme: URI path — /data/api/3/action
+deprecation:
+  policy_url: null
+  policy_published: false
+  sunset_header: false
+  deprecation_header: false
+  note: No RFC 8594 Sunset or Deprecation header was observed and no deprecation policy page exists. Layer names carry
+    the de facto versioning instead — Incident_Data_English_20191007_View pins a 2019-10-07 extract, and CER_Pipeline_Systems_WGS84_view
+    sits beside CER_Pipeline_Systems_WGS84_WM_v with the same 28 features in a different projection. Nothing tells
+    a client which is canonical or when either retires.
+stale_or_provisional_surfaces:
+- service: Terminal_test
+  note: Name declares itself a test service; 13 features, published anonymously alongside production layers.
+- service: tmp_mid_view
+  note: '"tmp" service holding 3,007 pipeline segment features. No statement of status.'
+- service: survey123_e293d5b8f8e54fcab496bebabc814db6_fieldworker
+  count: 0
+  note: An empty Survey123 fieldworker layer left public. Zero features on 2026-07-27.
+- service: Oil_and_Gas_Resource_Area_7344b
+  note: Byte-identical field set and feature count (3) to Oil_and_Gas_Resource_Area. An unretired duplicate.
+- service: Incident_Data_English_20191007_View
+  note: The incident layer is frozen at a 2019-10-07 extract while the CKAN Incidents dataset continues to update.
+    The geospatial and tabular views of the same regulatory record have diverged.
+sla:
+  url: null
+  uptime_target: null
+  published: false
+status_page: null
+status_page_note: The CER operates no status page. The infrastructure serving its only self-operated API is Esri ArcGIS
+  Online, whose status page (https://status.arcgis.com/) covers the vendor platform rather than the CER service, and
+  the CKAN surface is Treasury Board infrastructure. Neither is a CER commitment, so no StatusPage pointer is emitted.
+upstream_status_pages:
+- operator: Esri
+  url: https://status.arcgis.com/
+  covers: ArcGIS Online, which hosts the 23 CER feature services
+data_freshness_declared:
+  source: CKAN "frequency" field across the 83 CER datasets, 2026-07-27
+  note: The only forward-looking commitment the CER publishes about any of this data.
+  cadences:
+  - frequency: as_needed
+    datasets: 21
+  - frequency: P1Y (annual)
+    datasets: 20
+  - frequency: P1M (monthly)
+    datasets: 15
+  - frequency: not_planned
+    datasets: 15
+  - frequency: P3M (quarterly)
+    datasets: 4
+  - frequency: P4M
+    datasets: 2
+  - frequency: P6M
+    datasets: 2
+  - frequency: P1D (daily)
+    datasets: 1
+  - frequency: P2M
+    datasets: 1
+  - frequency: unknown
+    datasets: 1
+  - frequency: irregular
+    datasets: 1
+deprecated_operations: []
+predecessor:
+  name: National Energy Board
+  note: The CER replaced the NEB under the Canadian Energy Regulator Act in 2019. The ArcGIS Online portal is still
+    hosted at neb-gis.maps.arcgis.com and the predecessor GitHub identity NEBGitHub still carries 5 repositories.

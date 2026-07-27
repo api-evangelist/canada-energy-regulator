@@ -1,0 +1,76 @@
+generated: '2026-07-27'
+method: searched
+source: live probes 2026-07-27 plus review.yml findings
+note: The CER makes no conformance claim on any of its pages, so nothing here is a restatement of a provider assertion.
+  Each true entry was verified against a live response; each false entry is a genuine absence, recorded so the next
+  round does not re-derive it.
+standards:
+- id: ogc-wms-1.3.0
+  conforms: true
+  evidence: GetCapabilities returned a WMS_Capabilities root element with version="1.3.0", 7,019 bytes, HTTP 200,
+    on the CER Assessments layer at maps-cartes.services.geo.ca.
+  artifact: contracts/canada-energy-regulator-cer-assessments-wms-capabilities.xml
+  note: The only open, vendor-neutral international standard in the CER data estate.
+- id: esri-arcgis-rest
+  conforms: true
+  evidence: 23 FeatureServers at currentVersion 12 in the CER ArcGIS Online organization, plus an ArcGIS Server 10.81
+    MapServer on the Federal Geospatial Platform. A vendor API, not an open standard.
+  artifact: contracts/canada-energy-regulator-arcgis-services.json
+- id: ckan-action-api-v3
+  conforms: true
+  evidence: package_search / package_show / organization_show / site_read all answered against the CER organization
+    id A3EE9522-882F-47B0-BA7D-83420DC8577C.
+  note: Operated by Treasury Board of Canada Secretariat, not by the CER. The CER is a publisher on it, not its operator.
+- id: ca-ogl-lgo
+  conforms: true
+  evidence: All 83 CER datasets carry license_id ca-ogl-lgo (Open Government Licence - Canada); counted across every
+    package on 2026-07-27.
+- id: rfc-9116-security-txt
+  conforms: false
+  evidence: https://www.cer-rec.gc.ca/.well-known/security.txt returns the 4,405-byte soft-404 HTML page. No security.txt
+    on any CER, geo.ca or open.canada.ca host probed.
+- id: rfc-8615-well-known
+  conforms: false
+  evidence: Every /.well-known/ path probed soft-404s. No api-catalog, no ai-plugin.json, no OIDC or OAuth metadata.
+- id: rfc-9457-problem-details
+  conforms: false
+  evidence: ArcGIS, CKAN and the CER web host each use a different vendor error envelope; no application/problem+json
+    anywhere.
+- id: openapi
+  conforms: false
+  evidence: No OpenAPI or Swagger document published on any CER host. Reconfirmed 2026-07-27.
+- id: asyncapi
+  conforms: false
+  evidence: No event, streaming or webhook surface exists. Not applicable rather than missing.
+- id: graphql
+  conforms: false
+  evidence: The BERDI app bundles an Apollo Client but no reachable endpoint was confirmed at /berdi/graphql, /berdi/api/graphql
+    or /graphql. Introspection never succeeded.
+- id: oauth2
+  conforms: false
+  evidence: No OAuth surface. Anonymous access throughout.
+- id: oidc
+  conforms: false
+  evidence: /.well-known/openid-configuration soft-404s on www., apps. and apps2.cer-rec.gc.ca.
+- id: naesb-req21-espi-green-button
+  conforms: false
+  evidence: No reference to Green Button, ESPI or NAESB REQ.21 anywhere on cer-rec.gc.ca. Out of remit — consumer
+    energy data in Canada is provincial, and the only mandate is Ontario O. Reg. 633/21 administered by the Ontario
+    Energy Board.
+- id: iec-cim-61968-61970
+  conforms: false
+  evidence: No reference found. The CER exchanges no grid model or meter data.
+- id: ieee-2030.5
+  conforms: false
+  evidence: No reference found. Outside the CER remit.
+- id: ocpp-ocpi-openadr
+  conforms: false
+  evidence: No reference found. Outside the CER remit.
+- id: cdr-consumer-data-standards
+  conforms: false
+  evidence: Australian instrument; not applicable to a Canadian regulator.
+certifications_published: []
+compliance_program_published: false
+compliance_note: No SOC 2, ISO 27001, PCI DSS, HIPAA, FedRAMP or CSA STAR claim is published, and no trust centre
+  exists. The CER is a federal department subject to Government of Canada security policy rather than to commercial
+  audit regimes, so no Compliance pointer is emitted — there is no published compliance program to point at.

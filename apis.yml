@@ -23,7 +23,7 @@ description: >-
   visualizations on GitHub. What it does not have is a developer portal, an OpenAPI definition, an API key,
   a rate-limit policy, or a single machine-readable path to an individual customer's usage or billing data.
   No mandate obliges it to have one. Home market Canada.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/groq.png
+image: https://www.cer-rec.gc.ca/global/images/logo_cer_en.png
 tags:
 - Energy
 - Canada
@@ -70,6 +70,14 @@ apis:
     url: https://neb-gis.maps.arcgis.com/apps/webappviewer/index.html?id=2d11fd4e6a7a4f4ba7fe6bdf51ae52de
   - type: Website
     url: https://neb-gis.maps.arcgis.com/
+  - type: APIReference
+    name: ArcGIS REST services directory (captured verbatim 2026-07-27)
+    url: contracts/canada-energy-regulator-arcgis-services.json
+  - type: JSONSchema
+    name: Attribute schemas for all 25 CER ArcGIS feature layers (derived)
+    url: json-schema/canada-energy-regulator-arcgis-layers.schema.json
+  - type: DataModel
+    url: data-model/canada-energy-regulator-data-model.yml
 - aid: canada-energy-regulator:cer-assessments-map-service
   name: CER Assessments Map Service (Federal Geospatial Platform)
   description: >-
@@ -96,6 +104,12 @@ apis:
     url: https://maps-cartes.services.geo.ca/server_serveur/services/NRCan/CER_Assessments_EN/MapServer/WMSServer?request=GetCapabilities&service=WMS&version=1.3.0
   - type: Documentation
     url: https://open.canada.ca/data/en/dataset/039fbd92-43c2-4805-b210-d65703712e37
+  - type: APIReference
+    name: ArcGIS MapServer descriptor (captured verbatim 2026-07-27)
+    url: contracts/canada-energy-regulator-cer-assessments-mapserver.json
+  - type: APIReference
+    name: OGC WMS 1.3.0 GetCapabilities (captured verbatim 2026-07-27)
+    url: contracts/canada-energy-regulator-cer-assessments-wms-capabilities.xml
 - aid: canada-energy-regulator:cer-open-data-ckan
   name: CER Open Data via the Open Government Portal CKAN API
   description: >-
@@ -130,6 +144,8 @@ apis:
   - type: Documentation
     url: https://www.cer-rec.gc.ca/en/data-analysis/
 common:
+- type: DomainSecurity
+  url: security/canada-energy-regulator-domain-security.yml
 - type: Website
   url: https://www.cer-rec.gc.ca/en/
 - type: Documentation
@@ -150,8 +166,34 @@ common:
   url: https://github.com/CER-REC/incidents-pipeliniers_pipeline-incidents
 - type: TermsOfService
   url: https://www.cer-rec.gc.ca/en/terms-conditions.html
+- type: PrivacyPolicy
+  url: https://www.cer-rec.gc.ca/en/terms-conditions.html#s1
 - type: Support
   url: https://www.cer-rec.gc.ca/en/about/contact/index.html
+- type: Blog
+  url: https://www.cer-rec.gc.ca/en/about/news-room/index.html
+- type: License
+  name: Open Government Licence - Canada
+  url: https://open.canada.ca/en/open-government-licence-canada
+- type: Authentication
+  url: authentication/canada-energy-regulator-authentication.yml
+- type: Conventions
+  url: conventions/canada-energy-regulator-conventions.yml
+- type: ErrorCatalog
+  url: errors/canada-energy-regulator-problem-types.yml
+- type: Lifecycle
+  url: lifecycle/canada-energy-regulator-lifecycle.yml
+- type: Conformance
+  url: conformance/canada-energy-regulator-conformance.yml
+- type: DataModel
+  url: data-model/canada-energy-regulator-data-model.yml
+- type: Vocabulary
+  name: Canada Energy Regulator energy glossary (356 terms)
+  url: vocabulary/canada-energy-regulator-glossary.yml
+- type: JSONSchema
+  url: json-schema/canada-energy-regulator-arcgis-layers.schema.json
+- type: LLMsTxt
+  url: llms/canada-energy-regulator-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

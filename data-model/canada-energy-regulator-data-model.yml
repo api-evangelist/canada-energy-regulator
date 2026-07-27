@@ -1,0 +1,383 @@
+generated: '2026-07-27'
+method: derived
+source:
+- https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services?f=json
+- https://open.canada.ca/data/api/3/action/package_search?fq=owner_org:A3EE9522-882F-47B0-BA7D-83420DC8577C
+- json-schema/canada-energy-regulator-arcgis-layers.schema.json
+note: 'Derived from the layer descriptors and CKAN package metadata the services themselves publish — not from an
+  OpenAPI, because there is none. Every entity, field count and feature count below was read off a live response on
+  2026-07-27. The headline finding is that this estate has no primary keys that cross surfaces: entities are joined
+  by company NAME as free text, not by identifier.'
+domains:
+- domain: geospatial
+  store: Esri ArcGIS Online (CER-operated)
+  entities: 25
+  base: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services
+- domain: catalog
+  store: CKAN on the Open Government Portal (Treasury Board-operated)
+  entities: 3
+  base: https://open.canada.ca/data/api/3/action
+- domain: geospatial-federal
+  store: Federal Geospatial Platform (NRCan-operated)
+  entities: 1
+  base: https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/CER_Assessments_EN/MapServer
+entities:
+- entity: AER_Regulated_Pipelines_v1/0
+  name: AER_Regulated_Pipelines
+  surface: arcgis
+  geometry: esriGeometryPolyline
+  features_2026_07_27: 315089
+  max_record_count: 2000
+  field_count: 51
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/AER_Regulated_Pipelines_v1__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/AER_Regulated_Pipelines_v1/FeatureServer/0
+- entity: Application_Submissions_View/2
+  name: ApplicationSubmissionLine
+  surface: arcgis
+  geometry: esriGeometryPolyline
+  features_2026_07_27: 1
+  max_record_count: 2000
+  field_count: 6
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/Application_Submissions_View__2
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Application_Submissions_View/FeatureServer/2
+- entity: CER_Pipeline_Systems_WGS84_view/3
+  name: CER_Pipeline_Systems_WGS84
+  surface: arcgis
+  geometry: esriGeometryPolyline
+  features_2026_07_27: 28
+  max_record_count: 2000
+  field_count: 10
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/CER_Pipeline_Systems_WGS84_view__3
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/CER_Pipeline_Systems_WGS84_view/FeatureServer/3
+- entity: CER_Pipeline_Systems_WGS84_WM_v/0
+  name: CER_Pipeline_Systems_WGS84_WM
+  surface: arcgis
+  geometry: esriGeometryPolyline
+  features_2026_07_27: 28
+  max_record_count: 2000
+  field_count: 9
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/CER_Pipeline_Systems_WGS84_WM_v__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/CER_Pipeline_Systems_WGS84_WM_v/FeatureServer/0
+- entity: EIA_Crude_Oil_Pipeline/0
+  name: EIA Crude Oil Pipelines
+  surface: arcgis
+  geometry: esriGeometryPolyline
+  features_2026_07_27: 231
+  max_record_count: 2000
+  field_count: 5
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/EIA_Crude_Oil_Pipeline__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/EIA_Crude_Oil_Pipeline/FeatureServer/0
+- entity: Enbridge_Mainline_Connected_Refinery/0
+  name: Enbridge Mainline Connected Refinery
+  surface: arcgis
+  geometry: esriGeometryPoint
+  features_2026_07_27: 28
+  max_record_count: 2000
+  field_count: 25
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/Enbridge_Mainline_Connected_Refinery__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Enbridge_Mainline_Connected_Refinery/FeatureServer/0
+- entity: Feature_Layers/0
+  name: Connecting American Pipeline
+  surface: arcgis
+  geometry: esriGeometryPolyline
+  features_2026_07_27: 231
+  max_record_count: 2000
+  field_count: 10
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/Feature_Layers__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Feature_Layers/FeatureServer/0
+- entity: Feature_Layers/1
+  name: Pipeline System
+  surface: arcgis
+  geometry: esriGeometryPolyline
+  features_2026_07_27: 231
+  max_record_count: 2000
+  field_count: 13
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/Feature_Layers__1
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Feature_Layers/FeatureServer/1
+- entity: Feature_Layers/2
+  name: Connecting Canadian Pipeline
+  surface: arcgis
+  geometry: esriGeometryPolyline
+  features_2026_07_27: 231
+  max_record_count: 2000
+  field_count: 13
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/Feature_Layers__2
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Feature_Layers/FeatureServer/2
+- entity: FN_Reserves_view/0
+  name: FN_Reserves
+  surface: arcgis
+  geometry: esriGeometryPolygon
+  features_2026_07_27: 3100
+  max_record_count: 1000
+  field_count: 29
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/FN_Reserves_view__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/FN_Reserves_view/FeatureServer/0
+- entity: Incident_Data_English_20191007_View/0
+  name: Incident_Data_English_20191007
+  surface: arcgis
+  geometry: esriGeometryPoint
+  features_2026_07_27: 1899
+  max_record_count: 1000
+  field_count: 20
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/Incident_Data_English_20191007_View__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Incident_Data_English_20191007_View/FeatureServer/0
+- entity: Incident_Data_French_20191007_View_FINAL/0
+  name: Incident_Data_French_20191007
+  surface: arcgis
+  geometry: esriGeometryPoint
+  features_2026_07_27: 1899
+  max_record_count: 2000
+  field_count: 21
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/Incident_Data_French_20191007_View_FINAL__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Incident_Data_French_20191007_View_FINAL/FeatureServer/0
+- entity: Line10/0
+  name: Line10
+  surface: arcgis
+  geometry: esriGeometryPolyline
+  features_2026_07_27: 1
+  max_record_count: 2000
+  field_count: 3
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/Line10__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Line10/FeatureServer/0
+- entity: Oil_and_Gas_Resource_Area/0
+  name: Oil and Gas Resource Area
+  surface: arcgis
+  geometry: esriGeometryPolygon
+  features_2026_07_27: 3
+  max_record_count: 2000
+  field_count: 5
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/Oil_and_Gas_Resource_Area__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Oil_and_Gas_Resource_Area/FeatureServer/0
+- entity: Oil_and_Gas_Resource_Area_7344b/0
+  name: Oil and Gas Resource Area
+  surface: arcgis
+  geometry: esriGeometryPolygon
+  features_2026_07_27: 3
+  max_record_count: 2000
+  field_count: 5
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/Oil_and_Gas_Resource_Area_7344b__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Oil_and_Gas_Resource_Area_7344b/FeatureServer/0
+- entity: Pipelines_Profile_Links_EN_view/0
+  name: Pipelines_Profile_Links_EN
+  surface: arcgis
+  geometry: null
+  features_2026_07_27: 25
+  max_record_count: 1000
+  field_count: 4
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/Pipelines_Profile_Links_EN_view__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Pipelines_Profile_Links_EN_view/FeatureServer/0
+- entity: Prov_Pipe_Status/0
+  name: Prov_Pipe_Status
+  surface: arcgis
+  geometry: null
+  features_2026_07_27: 43
+  max_record_count: 2000
+  field_count: 4
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/Prov_Pipe_Status__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Prov_Pipe_Status/FeatureServer/0
+- entity: Prov_Pipe_Type/0
+  name: Prov_Pipe_Type
+  surface: arcgis
+  geometry: null
+  features_2026_07_27: 25
+  max_record_count: 2000
+  field_count: 4
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/Prov_Pipe_Type__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Prov_Pipe_Type/FeatureServer/0
+- entity: Refinery/0
+  name: Refinery
+  surface: arcgis
+  geometry: esriGeometryPoint
+  features_2026_07_27: 28
+  max_record_count: 2000
+  field_count: 6
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/Refinery__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Refinery/FeatureServer/0
+- entity: survey123_e293d5b8f8e54fcab496bebabc814db6_fieldworker/0
+  name: survey
+  surface: arcgis
+  geometry: esriGeometryPoint
+  features_2026_07_27: 0
+  max_record_count: 1000
+  field_count: 9
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/survey123_e293d5b8f8e54fcab496bebabc814db6_fieldworker__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/survey123_e293d5b8f8e54fcab496bebabc814db6_fieldworker/FeatureServer/0
+- entity: Terminal_test/0
+  name: Terminal_test
+  surface: arcgis
+  geometry: esriGeometryPoint
+  features_2026_07_27: 13
+  max_record_count: 2000
+  field_count: 3
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/Terminal_test__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Terminal_test/FeatureServer/0
+- entity: tmp_mid_view/0
+  name: tmp_mid
+  surface: arcgis
+  geometry: esriGeometryPoint
+  features_2026_07_27: 3007
+  max_record_count: 2000
+  field_count: 8
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/tmp_mid_view__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/tmp_mid_view/FeatureServer/0
+- entity: US_Petroleum_Product_Pipeline_EIA/0
+  name: EIA_PETROLEUMPIPELINE_10M_L
+  surface: arcgis
+  geometry: esriGeometryPolyline
+  features_2026_07_27: 328
+  max_record_count: 2000
+  field_count: 4
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/US_Petroleum_Product_Pipeline_EIA__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/US_Petroleum_Product_Pipeline_EIA/FeatureServer/0
+- entity: US_Section_Of_Cochin_Pipeline/0
+  name: US_Section_Of_Cochin_Pipeline
+  surface: arcgis
+  geometry: esriGeometryPolyline
+  features_2026_07_27: 1
+  max_record_count: 2000
+  field_count: 5
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/US_Section_Of_Cochin_Pipeline__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/US_Section_Of_Cochin_Pipeline/FeatureServer/0
+- entity: Western_Canada_Sedimentary_Basin/0
+  name: Western Canada Sedimentary Basin
+  surface: arcgis
+  geometry: esriGeometryPolygon
+  features_2026_07_27: 1
+  max_record_count: 2000
+  field_count: 4
+  schema: json-schema/canada-energy-regulator-arcgis-layers.schema.json#/$defs/Western_Canada_Sedimentary_Basin__0
+  url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Western_Canada_Sedimentary_Basin/FeatureServer/0
+- entity: ckan/organization
+  name: Organization
+  surface: ckan
+  id: A3EE9522-882F-47B0-BA7D-83420DC8577C
+  slug: cer-rec
+  title: Canada Energy Regulator | La Régie de l'énergie du Canada
+  field_count: null
+  url: https://open.canada.ca/data/api/3/action/organization_show?id=cer-rec
+- entity: ckan/package
+  name: Dataset
+  surface: ckan
+  instances_2026_07_27: 83
+  field_count: 81
+  note: Government of Canada CKAN profile — carries title_translated, notes_translated, frequency, time_period_coverage_start/end,
+    jurisdiction, topic_category, spatial on top of core CKAN.
+  url: https://open.canada.ca/data/api/3/action/package_search?fq=owner_org:A3EE9522-882F-47B0-BA7D-83420DC8577C
+- entity: ckan/resource
+  name: Resource
+  surface: ckan
+  instances_2026_07_27: 944
+  field_count: 37
+  formats:
+    CSV: 894
+    HTML: 36
+    PDF: 8
+    XLSX: 2
+    ESRI REST: 2
+    WMS: 2
+  note: Exactly 1 of the 944 resources has datastore_active true (coal-2020-data-dictionary), so datastore_search
+    row-level querying is effectively unavailable across the CER estate.
+- entity: fgp/CER_Assessments_EN/0
+  name: Canada Energy Regulator - Assessments
+  surface: arcgis-mapserver
+  url: https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/CER_Assessments_EN/MapServer/0
+  note: Also exposed as OGC WMS 1.3.0 named layer "0".
+relationships:
+- from: ckan/organization
+  to: ckan/package
+  type: has_many
+  via: owner_org
+  confidence: high
+  note: The only real foreign key in the estate. 83 packages resolve from one organization id.
+- from: ckan/package
+  to: ckan/resource
+  type: has_many
+  via: package_id
+  confidence: high
+  note: 944 resources across 83 packages.
+- from: ckan/resource
+  to: https://www.cer-rec.gc.ca/open/
+  type: points_to
+  via: url
+  confidence: high
+  note: 894 CSV resources dereference into the CER bulk tree. This, not the API, is the actual data path.
+- from: Incident_Data_English_20191007_View/0
+  to: CER_Pipeline_Systems_WGS84_view/3
+  type: belongs_to
+  via: Company / Company
+  confidence: low
+  note: Joined by operator name as free text. There is no company identifier shared between the layers, so the join
+    is string-matching and will not survive renames, mergers or bilingual spellings.
+- from: tmp_mid_view/0
+  to: CER_Pipeline_Systems_WGS84_view/3
+  type: belongs_to
+  via: Company / Company
+  confidence: low
+  note: Same free-text company join; tmp_mid also carries Pipeline_P, Substance, Status and Age at segment level.
+- from: Pipelines_Profile_Links_EN_view/0
+  to: CER_Pipeline_Systems_WGS84_view/3
+  type: belongs_to
+  via: pipeline_company / Company
+  confidence: low
+  note: 25 rows mapping company plus pipeline_type to a profile_link URL on the CER site. A link table between the
+    geospatial layer and the human web pages.
+- from: AER_Regulated_Pipelines_v1/0
+  to: CER_Pipeline_Systems_WGS84_view/3
+  type: none
+  via: null
+  confidence: high
+  note: No relationship. AER pipelines are Alberta Energy Regulator provincial assets (315,089 segments keyed on LICENCE_NO/COMP_NAME);
+    CER pipelines are the 28 federally regulated systems. Different regulator, different key space, colocated in the
+    same ArcGIS organization.
+- from: Incident_Data_French_20191007_View_FINAL/0
+  to: Incident_Data_English_20191007_View/0
+  type: translation_of
+  via: positional — field names themselves are translated
+  confidence: high
+  note: Both hold 1,899 features. Numéro_d_i/Incident_N, Société/Company, État/Status. Language is a separate service,
+    not a parameter.
+- from: CER_Pipeline_Systems_WGS84_WM_v/0
+  to: CER_Pipeline_Systems_WGS84_view/3
+  type: projection_of
+  via: PipelineID
+  confidence: high
+  note: Same 28 features, Web Mercator instead of WGS84. PipelineID is the one intra-estate identifier that actually
+    looks like a key.
+- from: Prov_Pipe_Status/0
+  to: Prov_Pipe_Type/0
+  type: sibling
+  via: PROV_CLIPPED
+  confidence: high
+  note: 'Two non-spatial aggregate tables keyed on province: 43 province-by-status rows and 25 province-by-type rows,
+    each carrying LENGTH_CAL.'
+key_fields:
+- field: PipelineID
+  entities:
+  - CER_Pipeline_Systems_WGS84_view/3
+  - CER_Pipeline_Systems_WGS84_WM_v/0
+  note: The only stable cross-layer identifier found.
+- field: Company
+  entities:
+  - CER_Pipeline_Systems_WGS84_view/3
+  - Incident_Data_English_20191007_View/0
+  - tmp_mid_view/0
+  - Application_Submissions_View/2
+  note: Free-text operator name. The de facto join key of the whole estate, and unqualified.
+- field: Incident_N
+  entities:
+  - Incident_Data_English_20191007_View/0
+  note: CER incident number. Also the key of the CKAN Incidents dataset, but the two are not linked programmatically.
+- field: LICENCE_NO
+  entities:
+  - AER_Regulated_Pipelines_v1/0
+  note: Alberta Energy Regulator licence number — a provincial key, not a CER one.
+- field: owner_org
+  entities:
+  - ckan/package
+  note: A3EE9522-882F-47B0-BA7D-83420DC8577C isolates the CER on the shared federal portal.
+observations:
+- Field names in several layers are truncated to 10 characters (Incident_N, Reported_D, What_Happe, Why_It_Hap) —
+  the schema still carries shapefile-era constraints.
+- 'Bilingualism is modelled three different ways in one estate: paired columns (name_en/name_fr), suffixed columns
+  (Pipeline_Name_FRA) and wholly separate services with translated field names (Incident_Data_French).'
+- Four of the 23 services are test, temporary, empty or duplicate and are published anonymously with no status marker.

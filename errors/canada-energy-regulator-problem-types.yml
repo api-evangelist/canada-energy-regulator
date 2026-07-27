@@ -1,0 +1,65 @@
+generated: '2026-07-27'
+method: searched
+source: live error responses provoked on each surface, 2026-07-27
+format: vendor-specific
+rfc9457: false
+note: Not derived from OpenAPI — there is none. Each envelope below was produced by deliberately malforming a real
+  request and recording the verbatim response body and HTTP status. The CER publishes no error reference; this is
+  the only error contract that exists for its data estate.
+envelopes:
+- surface: ArcGIS REST
+  shape: '{"error":{"code":<int>,"message":<string>,"details":[<string>]}}'
+  http_status_truthful: false
+  note: The error object carries its own code; the HTTP status stays 200. Branching on HTTP status will treat every
+    ArcGIS error as a success.
+- surface: CKAN Action API
+  shape: '{"help":<url>,"success":false,"error":{"__type":<string>,"message":<string>}}'
+  http_status_truthful: true
+  note: The only surface that sets a real status code. success:false is the reliable discriminator; the sibling success:true
+    response carries "result".
+- surface: www.cer-rec.gc.ca
+  shape: text/html error page, 4,405 bytes
+  http_status_truthful: false
+  note: 'Every unknown path on the CER web host soft-404s: HTTP 200 with an HTML page. Content-Type and body size
+    are the only signal.'
+problems:
+- surface: ArcGIS REST
+  http_status: 200
+  code: 400
+  title: Cannot perform query. Invalid query parameters.
+  details:
+  - '''where'' parameter is invalid'
+  observed: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Incident_Data_English_20191007_View/FeatureServer/0/query?where=BOGUS&f=json
+  remediation: Supply a SQL-92 predicate valid for the layer's fields; where=1=1 matches all.
+- surface: CKAN Action API
+  http_status: 404
+  code: Not Found Error
+  title: Not found
+  observed: https://open.canada.ca/data/api/3/action/package_show?id=does-not-exist-zzz
+  remediation: Resolve the dataset id from package_search first; CKAN ids are UUIDs or slugs, not titles.
+- surface: CKAN Action API
+  http_status: 400
+  code: Bad request
+  title: Bad request - Action name not known
+  observed: https://open.canada.ca/data/api/3/action/bogus_action
+  remediation: Call an action listed by /action/help_show; the body here is a bare JSON string, not the standard error
+    envelope.
+- surface: Open Government Portal WAF
+  http_status: 200
+  code: null
+  title: Request Rejected
+  observed: any open.canada.ca request without a browser-like User-Agent
+  remediation: Send a browser-like User-Agent header. This is the highest-frequency silent failure against this provider.
+- surface: www.cer-rec.gc.ca
+  http_status: 200
+  code: null
+  title: Soft 404 (HTML error page)
+  observed: https://www.cer-rec.gc.ca/openapi.json and every other unknown path
+  remediation: 'Treat Content-Type: text/html on a data request as an error; do not trust the 200.'
+- surface: https://www.cer-rec.gc.ca/open/
+  http_status: 200
+  code: 403
+  title: 403 Forbidden (soft)
+  observed: https://www.cer-rec.gc.ca/open/ — 3,411-byte Government of Canada error page under HTTP 200
+  remediation: The bulk CSV tree is not browsable. Enumerate resource URLs from CKAN package metadata instead of listing
+    the directory.

@@ -1,0 +1,61 @@
+generated: '2026-07-27'
+method: searched
+source: live /.well-known/ probes on every host in apis.yml, 2026-07-27
+result: none-published
+note: No /.well-known/ document is served on any host in the Canada Energy Regulator estate. This is recorded as negative
+  evidence so the next round does not re-probe. No WellKnown or SecurityTxt pointer is emitted, because nothing is
+  published to point at.
+soft_404_warning: www.cer-rec.gc.ca returns HTTP 200 with an identical 4,405-byte text/html page for every unknown
+  path, including all /.well-known/ paths. A status-code-only probe of this host will report false positives.
+hosts:
+- host: https://www.cer-rec.gc.ca
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    result: soft 404 — 4,405-byte text/html
+  - path: /.well-known/openid-configuration
+    status: 200
+    result: soft 404
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    result: soft 404
+  - path: /.well-known/api-catalog
+    status: 200
+    result: soft 404
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    result: soft 404
+  - path: /llms.txt
+    status: 200
+    result: soft 404
+  - path: /robots.txt
+    status: 200
+    result: real — 741 bytes text/plain, a bot blocklist (Titan, EmailCollector, EmailSiphon, ExtractorPro and similar).
+      No AI or LLM directives.
+  - path: /sitemap.xml
+    status: 200
+    result: real — 2,497,622 bytes, 8,477 URLs. No API, spec or developer path among them.
+- host: https://open.canada.ca
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    result: hard 404
+  - path: /data/.well-known/security.txt
+    status: 404
+    result: hard 404
+- host: https://services5.arcgis.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    result: '"Invalid URL" — Esri multi-tenant host, not CER-controlled'
+- host: https://maps-cartes.services.geo.ca
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    result: hard 404
+- host: https://www.canada.ca
+  documents:
+  - path: /.well-known/security.txt
+    status: null
+    result: no response — the host did not complete a request from this network over HTTP/2 or HTTP/1.1. Not probed
+      successfully; not recorded as absent.

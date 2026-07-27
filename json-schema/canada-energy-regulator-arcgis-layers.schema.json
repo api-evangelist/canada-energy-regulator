@@ -1,0 +1,2290 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://raw.githubusercontent.com/api-evangelist/canada-energy-regulator/refs/heads/main/json-schema/canada-energy-regulator-arcgis-layers.schema.json",
+ "title": "Canada Energy Regulator ArcGIS feature layer attributes",
+ "description": "DERIVED, not published by the CER. Each $def is the attribute object returned by the ArcGIS REST /query operation for one layer of the CER ArcGIS Online organization, translated one-for-one from the layer descriptor fields[] that the service itself publishes (esriFieldType -> JSON type, original type retained as x-esri-field-type). No field was invented and no field was dropped. Fetched 2026-07-27 from services5.arcgis.com/vNzamREXvX2WcX6d.",
+ "x-generated": "2026-07-27",
+ "x-method": "derived",
+ "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services?f=json",
+ "$defs": {
+  "AER_Regulated_Pipelines_v1__0": {
+   "type": "object",
+   "title": "AER_Regulated_Pipelines",
+   "description": "Attributes of layer 0 (AER_Regulated_Pipelines) of the AER_Regulated_Pipelines_v1 FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPolyline; maxRecordCount 2000; 315089 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/AER_Regulated_Pipelines_v1/FeatureServer/0?f=json",
+   "properties": {
+    "OBJECTID": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "LICENCE_NO": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "LINE_NO": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "LIC_LI_NO": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "PLLICSEGID": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "COMP_NAME": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "BA_CODE": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "PL_SPEC_ID": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "SEG_LENGTH": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "SEG_STATUS": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "FROM_FAC": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "FROM_LOC": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "TO_FAC": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "TO_LOC": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "H2S_R_VOLM": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "H2S_R_LEVL": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "H2S_CONT": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "PIPTECHSTD": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "OUT_DIAMET": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "WALL_THICK": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "PIPE_TYPE": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "PIPE_GRADE": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "PIP_MATERL": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "PIPE_MAOP": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "BIDIRE_IND": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "HDD_IND": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "LINER_GRD": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "LINER_TYPE": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "EXT_COAT": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "PIPE_ENVIR": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "CLASS_LOC": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "STRESSLEVL": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "JOINTMETHD": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "INT_COAT": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "FLD_CTR_NM": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "SUBSTANCE1": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "SUBSTANCE2": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "SUBSTANCE3": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "ORIG_LICNO": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "ORIGPSPPID": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "ORIGLIN_NO": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "LICAPPDATE": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "ORG_ISSUED": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "PERMT_APPR": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "PERMT_EXPI": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "LAST_OCCYR": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "TEMPSURFPL": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "GEOM_SRCE": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "LoadedAt": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "Shape__Length": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    },
+    "GlobalID": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "format": "uuid",
+     "x-esri-field-type": "esriFieldTypeGlobalID"
+    }
+   },
+   "additionalProperties": true
+  },
+  "Application_Submissions_View__2": {
+   "type": "object",
+   "title": "ApplicationSubmissionLine",
+   "description": "Attributes of layer 2 (ApplicationSubmissionLine) of the Application_Submissions_View FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPolyline; maxRecordCount 2000; 1 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Application_Submissions_View/FeatureServer/2?f=json",
+   "properties": {
+    "OBJECTID": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "Company": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "ProjectName": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "ProjectUID": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeInteger"
+    },
+    "LastUploadedDate": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "ProjectName_Fr": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    }
+   },
+   "additionalProperties": true
+  },
+  "CER_Pipeline_Systems_WGS84_view__3": {
+   "type": "object",
+   "title": "CER_Pipeline_Systems_WGS84",
+   "description": "Attributes of layer 3 (CER_Pipeline_Systems_WGS84) of the CER_Pipeline_Systems_WGS84_view FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPolyline; maxRecordCount 2000; 28 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/CER_Pipeline_Systems_WGS84_view/FeatureServer/3?f=json",
+   "properties": {
+    "OBJECTID": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "PipelineID": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Pipeline_Name": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Pipeline_Name_FRA": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Commodity": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Commodity_FRA": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Company": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Company_FRA": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "UploadedAt": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "Shape__Length": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    }
+   },
+   "additionalProperties": true
+  },
+  "CER_Pipeline_Systems_WGS84_WM_v__0": {
+   "type": "object",
+   "title": "CER_Pipeline_Systems_WGS84_WM",
+   "description": "Attributes of layer 0 (CER_Pipeline_Systems_WGS84_WM) of the CER_Pipeline_Systems_WGS84_WM_v FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPolyline; maxRecordCount 2000; 28 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/CER_Pipeline_Systems_WGS84_WM_v/FeatureServer/0?f=json",
+   "properties": {
+    "OBJECTID": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "PipelineID": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Pipeline_Name": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Pipeline_Name_FRA": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Commodity": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Commodity_FRA": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Company": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Company_FRA": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Shape__Length": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    }
+   },
+   "additionalProperties": true
+  },
+  "EIA_Crude_Oil_Pipeline__0": {
+   "type": "object",
+   "title": "EIA Crude Oil Pipelines",
+   "description": "Attributes of layer 0 (EIA Crude Oil Pipelines) of the EIA_Crude_Oil_Pipeline FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPolyline; maxRecordCount 2000; 231 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/EIA_Crude_Oil_Pipeline/FeatureServer/0?f=json",
+   "properties": {
+    "objectid": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "title": "OBJECTID",
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "opername": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Opername",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "pipename": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Pipename",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "shape_leng": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "title": "Shape_Leng",
+     "x-esri-field-type": "esriFieldTypeDouble"
+    },
+    "Shape__Length": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    }
+   },
+   "additionalProperties": true
+  },
+  "Enbridge_Mainline_Connected_Refinery__0": {
+   "type": "object",
+   "title": "Enbridge Mainline Connected Refinery",
+   "description": "Attributes of layer 0 (Enbridge Mainline Connected Refinery) of the Enbridge_Mainline_Connected_Refinery FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPoint; maxRecordCount 2000; 28 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Enbridge_Mainline_Connected_Refinery/FeatureServer/0?f=json",
+   "properties": {
+    "objectid": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "title": "OBJECTID",
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "feature_id": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "FEATURE_ID",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "name_en": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "FEATURE_NAME",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "created_by": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "CREATED_BY",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "created_date": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "title": "CREATED_DATE",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "created_source": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "CREATED_SOURCE",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "revised_by": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "REVISED_BY",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "revised_date": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "title": "REVISED_DATE",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "revised_comment": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "REVISED_COMMENT",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "refinery_loc": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Location",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "owners_en": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "REFINERY_OWNERS",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "moc": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "title": "Capacity (barrels/day)",
+     "x-esri-field-type": "esriFieldTypeInteger"
+    },
+    "connected_lines": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Enbridge Mainline Connection Line(s)",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "only_s_en": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "ONLY_SOURCE",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "name_fr": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "French Name",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "owners_fr": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Refinery Owner (French)",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "only_s_fr": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Only Source (French)",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "line9_popup": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Line9_PopUp",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "start_year": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "title": "Start_Year",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "end_year": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "title": "End_Year",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "refining_capacity_bbl_d": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "title": "Refining_Capacity_bbl_d",
+     "x-esri-field-type": "esriFieldTypeInteger"
+    },
+    "feedstock": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Feedstock",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "product": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Product",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "market": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Market",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "information_sources": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Information_Sources",
+     "x-esri-field-type": "esriFieldTypeString"
+    }
+   },
+   "additionalProperties": true
+  },
+  "Feature_Layers__0": {
+   "type": "object",
+   "title": "Connecting American Pipeline",
+   "description": "Attributes of layer 0 (Connecting American Pipeline) of the Feature_Layers FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPolyline; maxRecordCount 2000; 231 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Feature_Layers/FeatureServer/0?f=json",
+   "properties": {
+    "objectid": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "title": "OBJECTID",
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "opername": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Operator Name",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "pipename": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Pipeline Name",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "shape_leng": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "title": "Shape_Leng",
+     "x-esri-field-type": "esriFieldTypeDouble"
+    },
+    "creationdate": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "title": "CreationDate",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "creator": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Creator",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "editdate": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "title": "EditDate",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "editor": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Editor",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "globalid": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "format": "uuid",
+     "x-esri-field-type": "esriFieldTypeGlobalID"
+    },
+    "Shape__Length": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    }
+   },
+   "additionalProperties": true
+  },
+  "Feature_Layers__1": {
+   "type": "object",
+   "title": "Pipeline System",
+   "description": "Attributes of layer 1 (Pipeline System) of the Feature_Layers FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPolyline; maxRecordCount 2000; 231 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Feature_Layers/FeatureServer/1?f=json",
+   "properties": {
+    "objectid": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "title": "OBJECTID",
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "pinfo_id": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "PINFO_ID",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "name_en": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "PINFO_NAME",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "created_by": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "CREATED_BY",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "created_date": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "title": "CREATED_DATE",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "create_source": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "CREATE_SOURCE",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "rev_by": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "REV_BY",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "rev_date": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "title": "REV_DATE",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "rev_comment": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "REV_COMMENT",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "ch": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Company (Certificate Holder)",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "name_fr": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "French Name",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "globalid": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "format": "uuid",
+     "x-esri-field-type": "esriFieldTypeGlobalID"
+    },
+    "Shape__Length": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    }
+   },
+   "additionalProperties": true
+  },
+  "Feature_Layers__2": {
+   "type": "object",
+   "title": "Connecting Canadian Pipeline",
+   "description": "Attributes of layer 2 (Connecting Canadian Pipeline) of the Feature_Layers FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPolyline; maxRecordCount 2000; 231 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Feature_Layers/FeatureServer/2?f=json",
+   "properties": {
+    "objectid": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "title": "OBJECTID",
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "pinfo_id": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "PINFO_ID",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "name_en": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "PINFO_NAME",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "created_by": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "CREATED_BY",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "created_date": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "title": "CREATED_DATE",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "create_source": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "CREATE_SOURCE",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "rev_by": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "REV_BY",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "rev_date": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "title": "REV_DATE",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "rev_comment": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "REV_COMMENT",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "ch": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Company (Certificate Holder)",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "name_fr": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "French Name",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "globalid": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "format": "uuid",
+     "x-esri-field-type": "esriFieldTypeGlobalID"
+    },
+    "Shape__Length": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    }
+   },
+   "additionalProperties": true
+  },
+  "FN_Reserves_view__0": {
+   "type": "object",
+   "title": "FN_Reserves",
+   "description": "Attributes of layer 0 (FN_Reserves) of the FN_Reserves_view FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPolygon; maxRecordCount 1000; 3100 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/FN_Reserves_view/FeatureServer/0?f=json",
+   "properties": {
+    "FID": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "ACQTECH": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "METACOVER": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "CREDATE": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "REVDATE": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "ACCURACY": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeSmallInteger"
+    },
+    "PROVIDER": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "DATASETNAM": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "SPECVERS": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "NID": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "ALCODE": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "LANGUAGE1": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "NAME1": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "LANGUAGE2": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "NAME2": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "LANGUAGE3": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "NAME3": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "LANGUAGE4": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "NAME4": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "LANGUAGE5": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "NAME5": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "JUR1": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "JUR2": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "JUR3": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "JUR4": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "ALTYPE": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "WEBREF": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Shape__Area": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    },
+    "Shape__Length": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    }
+   },
+   "additionalProperties": true
+  },
+  "Incident_Data_English_20191007_View__0": {
+   "type": "object",
+   "title": "Incident_Data_English_20191007",
+   "description": "Attributes of layer 0 (Incident_Data_English_20191007) of the Incident_Data_English_20191007_View FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPoint; maxRecordCount 1000; 1899 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Incident_Data_English_20191007_View/FeatureServer/0?f=json",
+   "properties": {
+    "FID": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "Incident_N": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Reported_D": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "Nearest_Po": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Province": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Company": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Status": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Approximat": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Substance": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Release_Ty": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Significan": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Year": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    },
+    "Longitude": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    },
+    "Latitude": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    },
+    "Incident_T": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Type_ID": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "YEAR_ID": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "STATUS_ID": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "What_Happe": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Why_It_Hap": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    }
+   },
+   "additionalProperties": true
+  },
+  "Incident_Data_French_20191007_View_FINAL__0": {
+   "type": "object",
+   "title": "Incident_Data_French_20191007",
+   "description": "Attributes of layer 0 (Incident_Data_French_20191007) of the Incident_Data_French_20191007_View_FINAL FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPoint; maxRecordCount 2000; 1899 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Incident_Data_French_20191007_View_FINAL/FeatureServer/0?f=json",
+   "properties": {
+    "OBJECTID": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "Num\u00e9ro_d_i": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Date_de_l_": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "Centre_hab": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Province__": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Province_(",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Soci\u00e9t\u00e9": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "\u00c9tat": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Approximat": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Substance_": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Type_de_D\u00e9": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Majeur": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Year": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    },
+    "Ann\u00e9e": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeInteger"
+    },
+    "Longitude": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    },
+    "Latitude": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    },
+    "Types_d_in": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Type_ID": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "YEAR_ID": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "STATUS_ID": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Ce_qui_s\u2019e": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "what_happened",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Cause": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    }
+   },
+   "additionalProperties": true
+  },
+  "Line10__0": {
+   "type": "object",
+   "title": "Line10",
+   "description": "Attributes of layer 0 (Line10) of the Line10 FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPolyline; maxRecordCount 2000; 1 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Line10/FeatureServer/0?f=json",
+   "properties": {
+    "objectid": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "title": "OBJECTID",
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "name": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "NAME",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Shape__Length": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    }
+   },
+   "additionalProperties": true
+  },
+  "Oil_and_Gas_Resource_Area__0": {
+   "type": "object",
+   "title": "Oil and Gas Resource Area",
+   "description": "Attributes of layer 0 (Oil and Gas Resource Area) of the Oil_and_Gas_Resource_Area FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPolygon; maxRecordCount 2000; 3 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Oil_and_Gas_Resource_Area/FeatureServer/0?f=json",
+   "properties": {
+    "objectid": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "title": "OBJECTID",
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "feature_name": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Name",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "feature_name_fr": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Nom",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Shape__Area": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    },
+    "Shape__Length": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    }
+   },
+   "additionalProperties": true
+  },
+  "Oil_and_Gas_Resource_Area_7344b__0": {
+   "type": "object",
+   "title": "Oil and Gas Resource Area",
+   "description": "Attributes of layer 0 (Oil and Gas Resource Area) of the Oil_and_Gas_Resource_Area_7344b FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPolygon; maxRecordCount 2000; 3 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Oil_and_Gas_Resource_Area_7344b/FeatureServer/0?f=json",
+   "properties": {
+    "objectid": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "title": "OBJECTID",
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "feature_name": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Name",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "feature_name_fr": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Nom",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Shape__Area": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    },
+    "Shape__Length": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    }
+   },
+   "additionalProperties": true
+  },
+  "Pipelines_Profile_Links_EN_view__0": {
+   "type": "object",
+   "title": "Pipelines_Profile_Links_EN",
+   "description": "Attributes of layer 0 (Pipelines_Profile_Links_EN) of the Pipelines_Profile_Links_EN_view FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type None; maxRecordCount 1000; 25 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Pipelines_Profile_Links_EN_view/FeatureServer/0?f=json",
+   "properties": {
+    "pipeline_company": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "pipeline company",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "pipeline_type": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "pipeline type",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "profile_link": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "profile link",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "ObjectId": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeOID"
+    }
+   },
+   "additionalProperties": true
+  },
+  "Prov_Pipe_Status__0": {
+   "type": "object",
+   "title": "Prov_Pipe_Status",
+   "description": "Attributes of layer 0 (Prov_Pipe_Status) of the Prov_Pipe_Status FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type None; maxRecordCount 2000; 43 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Prov_Pipe_Status/FeatureServer/0?f=json",
+   "properties": {
+    "PROV_CLIPPED": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "STATUS": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "LENGTH_CAL": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    },
+    "ObjectId": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeOID"
+    }
+   },
+   "additionalProperties": true
+  },
+  "Prov_Pipe_Type__0": {
+   "type": "object",
+   "title": "Prov_Pipe_Type",
+   "description": "Attributes of layer 0 (Prov_Pipe_Type) of the Prov_Pipe_Type FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type None; maxRecordCount 2000; 25 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Prov_Pipe_Type/FeatureServer/0?f=json",
+   "properties": {
+    "PROV_CLIPPED": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "TYPE": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "LENGTH_CAL": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    },
+    "ObjectId": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeOID"
+    }
+   },
+   "additionalProperties": true
+  },
+  "Refinery__0": {
+   "type": "object",
+   "title": "Refinery",
+   "description": "Attributes of layer 0 (Refinery) of the Refinery FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPoint; maxRecordCount 2000; 28 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Refinery/FeatureServer/0?f=json",
+   "properties": {
+    "OBJECTID": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "name_en": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "NAME_EN",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "owners_en": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "OWNERS_EN",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "name_fr": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "NAME_FR",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "owners_fr": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "OWNERS_FR",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "loaded_at": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "x-esri-field-type": "esriFieldTypeDate"
+    }
+   },
+   "additionalProperties": true
+  },
+  "survey123_e293d5b8f8e54fcab496bebabc814db6_fieldworker__0": {
+   "type": "object",
+   "title": "survey",
+   "description": "Attributes of layer 0 (survey) of the survey123_e293d5b8f8e54fcab496bebabc814db6_fieldworker FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPoint; maxRecordCount 1000; 0 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/survey123_e293d5b8f8e54fcab496bebabc814db6_fieldworker/FeatureServer/0?f=json",
+   "properties": {
+    "objectid": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "title": "ObjectID",
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "globalid": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "format": "uuid",
+     "title": "GlobalID",
+     "x-esri-field-type": "esriFieldTypeGlobalID"
+    },
+    "CreationDate": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "Creator": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "EditDate": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "Editor": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "your_name": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Your Name",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "today_is": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "format": "epoch-milliseconds",
+     "title": "Today is",
+     "x-esri-field-type": "esriFieldTypeDate"
+    },
+    "send_email_to": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Send email to",
+     "x-esri-field-type": "esriFieldTypeString"
+    }
+   },
+   "additionalProperties": true
+  },
+  "Terminal_test__0": {
+   "type": "object",
+   "title": "Terminal_test",
+   "description": "Attributes of layer 0 (Terminal_test) of the Terminal_test FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPoint; maxRecordCount 2000; 13 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Terminal_test/FeatureServer/0?f=json",
+   "properties": {
+    "objectid": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "title": "OBJECTID",
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "fac_name": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Name",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "fac_name_fr": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Nom",
+     "x-esri-field-type": "esriFieldTypeString"
+    }
+   },
+   "additionalProperties": true
+  },
+  "tmp_mid_view__0": {
+   "type": "object",
+   "title": "tmp_mid",
+   "description": "Attributes of layer 0 (tmp_mid) of the tmp_mid_view FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPoint; maxRecordCount 2000; 3007 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/tmp_mid_view/FeatureServer/0?f=json",
+   "properties": {
+    "OBJECTID": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "title": "FID",
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "Status": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Age": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Substance": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Company": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Pipeline_P": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Length": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    },
+    "ORIG_FID": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeInteger"
+    }
+   },
+   "additionalProperties": true
+  },
+  "US_Petroleum_Product_Pipeline_EIA__0": {
+   "type": "object",
+   "title": "EIA_PETROLEUMPIPELINE_10M_L",
+   "description": "Attributes of layer 0 (EIA_PETROLEUMPIPELINE_10M_L) of the US_Petroleum_Product_Pipeline_EIA FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPolyline; maxRecordCount 2000; 328 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/US_Petroleum_Product_Pipeline_EIA/FeatureServer/0?f=json",
+   "properties": {
+    "objectid": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "title": "OBJECTID",
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "opername": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Operator",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "pipename": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Pipeline Name",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Shape__Length": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    }
+   },
+   "additionalProperties": true
+  },
+  "US_Section_Of_Cochin_Pipeline__0": {
+   "type": "object",
+   "title": "US_Section_Of_Cochin_Pipeline",
+   "description": "Attributes of layer 0 (US_Section_Of_Cochin_Pipeline) of the US_Section_Of_Cochin_Pipeline FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPolyline; maxRecordCount 2000; 1 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/US_Section_Of_Cochin_Pipeline/FeatureServer/0?f=json",
+   "properties": {
+    "objectid": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "title": "OBJECTID",
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "opername": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Opername",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "pipename": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "Pipename",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "shape_leng": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "title": "Shape_Leng",
+     "x-esri-field-type": "esriFieldTypeDouble"
+    },
+    "Shape__Length": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    }
+   },
+   "additionalProperties": true
+  },
+  "Western_Canada_Sedimentary_Basin__0": {
+   "type": "object",
+   "title": "Western Canada Sedimentary Basin",
+   "description": "Attributes of layer 0 (Western Canada Sedimentary Basin) of the Western_Canada_Sedimentary_Basin FeatureServer in the Canada Energy Regulator ArcGIS Online organization. Geometry type esriGeometryPolygon; maxRecordCount 2000; 1 features on 2026-07-27.",
+   "x-source": "https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Western_Canada_Sedimentary_Basin/FeatureServer/0?f=json",
+   "properties": {
+    "objectid": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "title": "OBJECTID",
+     "x-esri-field-type": "esriFieldTypeOID"
+    },
+    "feature_name": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "title": "FEATURE_NAME",
+     "x-esri-field-type": "esriFieldTypeString"
+    },
+    "Shape__Area": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    },
+    "Shape__Length": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "x-esri-field-type": "esriFieldTypeDouble"
+    }
+   },
+   "additionalProperties": true
+  }
+ }
+}

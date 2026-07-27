@@ -1,0 +1,1556 @@
+generated: '2026-07-27'
+method: searched
+source: https://www.cer-rec.gc.ca/en/data-analysis/glossary/index.html
+name: Canada Energy Regulator Energy Glossary
+description: The CER publishes a public energy glossary on its Data and Analysis hub defining the terminology used
+  across its market reports, pipeline throughput and capacity data, tolls and tariffs filings, and Canada's Energy
+  Future projections. Harvested verbatim from the published HTML on 2026-07-27; each entry keeps the anchor id the
+  CER assigns it so a term can be deep-linked back to the source page.
+language: en
+license:
+  name: Open Government Licence - Canada
+  id: ca-ogl-lgo
+  url: https://open.canada.ca/en/open-government-licence-canada
+harvest:
+  url: https://www.cer-rec.gc.ca/en/data-analysis/glossary/index.html
+  http_status: 200
+  date: '2026-07-27'
+  term_count: 356
+related_sources:
+- url: https://www.cer-rec.gc.ca/en/safety-environment/industry-performance/interactive-pipeline/glossary-terms.html
+  http_status: 200
+  note: Interactive Pipeline Map glossary. Prose definitions of incident, significant incident, serious injury and
+    significant adverse effect on the environment; not term/definition structured, so not harvested into terms[].
+terms:
+- id: abandonment
+  term: Abandonment
+  definition: Permanently ceasing the operation of a pipeline.
+- id: aeco
+  term: AECO (Alberta Energy Company)
+  definition: The AECO Hub is the Canadian benchmark price for natural gas on the Nova Gas Transmission Ltd. (NGTL)
+    system, and is located at the Niska, Alberta gas storage facilities. AECO-C has become the virtual trading point
+    representing the price anywhere on the NGTL system. AECO or AECO-C is often used interchangeably with Nova Inventory
+    Transfer (NIT).
+- id: alkylation
+  term: Alkylation
+  definition: A secondary crude oil refining process which produces alkylate, a very-high octane component used
+    for gasoline blending.
+- id: allowanceforfundsusedduringconstruction
+  term: Allowance for funds used during construction (AFUDC)
+  definition: The cost of funds used during the period of construction when a utility undertakes to construct its
+    own facilities. The amount of the allowance is included in the total capitalized cost of the asset and is depreciated
+    over the life of the asset after it is placed in service. AFUDC is similar to "Interest During Construction"
+    for unregulated industries except that in determining AFUDC, the cost of equity capital is normally taken into
+    account.
+- id: alternativeemergingtechnologies
+  term: Alternative or emerging technologies
+  definition: New or emerging technologies that are used as an alternative to existing methods of energy production.
+    Alternative technologies include fuel cells and clean coal technologies, for example.
+- id: amortization
+  term: Amortization
+  definition: A systematic writing-off of an amount over a period of time.
+- id: apigravity
+  term: API gravity
+  definition: 'The American Petroleum Institute gravity, or API gravity, express the gravity or density for liquid
+    petroleum products. It is a measure of how heavy or light a petroleum liquid is compared to water: if its API
+    gravity is greater than 10 degrees, it is lighter and floats on water; if less than 10, it is heavier and sinks.
+    The lower the API gravity, the heavier and more viscous the bitumen. Most crude oils have a gravity below 45
+    degrees.'
+- id: apportionment
+  term: Apportionment
+  definition: When shippers nominate more oil, or oil product, in a given month than the pipeline is able to transport,
+    shipper volumes are apportioned (reduced) based on the tariff in effect. Apportionment can be driven by several
+    factors, including growing oil supply, increased oil demand, and reduced pipeline capacity.
+- id: atlanticbasin
+  term: Atlantic Basin
+  definition: Refers to countries residing beside or within the Atlantic Ocean and its related waters.
+- id: atmosphericdistillation
+  term: Atmospheric distillation
+  definition: The first processing unit in practically all refineries. The atmospheric unit separates (fractionates)
+    crude oil into intermediate products (or fractions) based on boiling point. These products (naphtha, gasoil,
+    and long residue) are further processed at other refinery units.
+- id: atwacc
+  term: ATWACC
+  definition: After-Tax Weighted-Average Cost of Capital. The after-tax weighted average of the required returns
+    for each source of capital (i.e. common equity, debt, preferred equity).
+- id: atwaccmethodology
+  term: ATWACC methodology
+  definition: A method for determining the appropriate return, based on the premise that the overall return should
+    be the key element in determining a fair rate of return and should be comparable to the overall after-tax return
+    of other companies of similar risk.
+- id: asphaltproduction
+  term: Asphalt production
+  definition: Asphalt is produced using the heaviest product (residual or short residue) sourced from the bottom
+    of a vacuum distillation tower. Asphalt is used primarily for road construction and roofing.
+- id: availablecapacity
+  term: Available capacity
+  definition: The maximum amount of product that can actually flow through a pipeline at any given time. The available
+    capacity of a pipeline usually differs from its nameplate capacity. This difference may for many reasons, such
+    as the type of product being transported, planned or unplanned outages, maintenance, upstream or downstream
+    constraints, pressure restrictions, and outside temperature. See Nameplate capacity.
+- id: averageservicelife
+  term: Average service life (ASL) depreciation
+  definition: A group method of depreciation whereby the rate of annual depreciation is based on the average service
+    life or average remaining service life of the group. This rate is applied to the surviving balances of the asset
+    group’s costs.
+- id: backhaul
+  term: Backhaul
+  definition: A "paper transport" of natural gas by displacement against the flow on a single pipeline so that the
+    natural gas is notionally delivered upstream of the point at which it enters the system.
+- id: basispoint
+  term: Basis point
+  definition: One-hundredth of a percentage point. It is used in reference to interest rates or rates of return
+    on equity.
+- id: battery
+  term: Battery
+  definition: With respect to electricity a battery is a container consisting of one or more cells, in which chemical
+    energy is converted into electricity and used as a source of power. In the oil and gas industry, a battery refers
+    to a system of tanks or surface equipment that receives natural gas or oil from one or more wells prior to delivery
+    to downstream pipelines or other disposition. A battery may include equipment for separating, measuring or storing
+    oil, gas and water.
+- id: betaorbetafactor
+  term: Beta or Beta factor
+  definition: A measure of the systematic risk of a security. It estimates the extent to which a stock’s price fluctuates
+    more or less than the market portfolio. A stock with a beta greater than one fluctuates more than the market
+    average and is therefore considered to be of higher risk and may generate a higher return than the market average.
+- id: bidirectionalpipeline
+  term: Bi-directional pipeline
+  definition: Gas or liquids pipeline systems that are capable of flowing product in both directions. Bi-directional
+    pipelines offer more flexibility than traditional uni-directional pipelines that only flow product in one direction,
+    and are becoming more common in regions where gas flows are changing rapidly.
+- id: bidfloor
+  term: Bid floor
+  definition: The minimum bid a shipper can make for interruptible transportation service, short-term or other biddable
+    services.
+- id: billingdeterminants
+  term: Billing determinants
+  definition: Calculated values used in toll design to allocate a pipeline company’s revenue requirement between
+    toll payers. Billing determinants generally account for both volume and distance.
+- id: bioenergy
+  term: Bioenergy
+  definition: Is energy, usually in form of heat or electricity, derived from the conversion of biomass where biomass
+    may be used directly as fuel, or processed into liquids and gases.
+- id: bioenergywithcarboncaptureandstorage
+  term: Bioenergy with carbon capture and storage (BECCS)
+  definition: Energy conversion systems that are fueled by biogenic sources and CO2 released by biogenic fuels is
+    captured and permanently stored.
+- id: biofuel
+  term: Biofuel
+  definition: Renewable fuels made from biomass, and include ethanol, biodiesel, biojet fuel, renewable natural
+    gas, and renewable diesel.
+- id: biogas
+  term: Biogas
+  definition: The gaseous emissions from anaerobic degradation of organic matter (from plants or animals) by a consortium
+    of bacteria. It is composed primarily of methane.
+- id: biomass
+  term: Biomass
+  definition: Organic material such as wood, crop waste, municipal solid waste, hog fuel or pulping liquor, processed
+    for energy production.
+- id: biodiesel
+  term: Biodiesel
+  definition: A diesel fuel substitute manufactured from oils such as vegetable oil or recycled cooking oil and
+    animal fats.
+- id: bitumenorcrudebitumen
+  term: Bitumen or crude bitumen
+  definition: A thick, sticky form of crude oil that is heavy and viscous so that it will not flow unless it is
+    heated or diluted with lighter hydrocarbons. Bitumen looks much like molasses at room temperature.
+- id: bituminouscoal
+  term: Bituminous coal
+  definition: A dense coal used primarily as fuel in steam-electric power generation, with substantial quantities
+    also used for heat and power applications in manufacturing and to make coke. It has a higher heat content than
+    lignite or sub-bituminous coal.
+- id: bluehydrogen
+  term: Blue hydrogen
+  definition: Hydrogen gas (H2) produced the same way grey hydrogen is produced, except the co-produced CO2 is either
+    captured and stored underground or is used to make other products. See Hydrogen, Grey hydrogen, Green hydrogen.
+- id: bond
+  term: Bond
+  definition: A debt security issued by a borrower that obligates the issuer to make specified payments to the holder
+    over an established period.
+- id: bondrating
+  term: Bond rating
+  definition: A quality rating assigned by credit rating agencies as an indication of creditworthiness.
+- id: '>bookvalue'
+  term: Book value
+  definition: The amount at which an item appears in the books of account and financial statements.
+- id: brent
+  term: Brent
+  definition: A key global crude oil benchmark price. It is a light sweet grade extracted from the North Sea.
+- id: buildingshell
+  term: Building shell
+  definition: Everything that separates the inside of a building from the outside, including the roof, floor, walls,
+    windows and doors.
+- id: bullettanks
+  term: Bullet tanks
+  definition: A bullet shaped, above ground pressurized vessel for storing propane, butane, or liquefied petroleum
+    gas. These tanks may be as large as 120,000 U.S. gallons.
+- id: businessrisk
+  term: Business risk
+  definition: The risk attributed to the nature of a particular business activity (as distinct from financial risk).
+    For pipelines, it typically includes supply, market, regulatory, competitive and operating risks.
+- id: butane
+  term: Butane
+  definition: Is a hydrocarbon with the molecular formula C4H10. Butane is a gas at room temperature and pressure,
+    but condenses into a liquid when pressurized, such as when stored in bottle or cylinder.
+- id: capacityelectricity
+  term: Capacity (Electricity)
+  definition: The maximum amount of power that a device can generate, use, or transfer; usually expressed in megawatts.
+- id: capacitypipelines
+  term: Capacity (Pipelines)
+  definition: The maximum amount of product that a pipeline can safely transport at any given time. See Nameplate
+    capacity, Available capacity.
+- id: capacityfactor
+  term: Capacity factor
+  definition: Capacity factor of an electricity generating unit is the ratio between its actual electricity production
+    in a given period of time and the maximum possible output over the same period.
+- id: capandtradeprograms
+  term: Cap and trade programs
+  definition: A cap-and-trade system limits the total level of specified pollutants that can be emitted in a given
+    jurisdiction. Emissions allowances are allocated by various means to polluters which are required to hold permits
+    for their emissions. A market for emission permits is established and market forces act to determine a price
+    for those permits. The benefit of such a system is those that can reduce their emissions at a cost that is lower
+    than the permit price will choose to do so. Those for whom it is more expensive to reduce emissions will prefer
+    to purchase a permit, meaning emission reductions are achieved in an economically efficient manner.
+- id: capital
+  term: Capital
+  definition: The total funds invested in a company by lenders (debt capital) and by owners (equity capital).
+- id: capitalassetpricingmodel
+  term: Capital asset pricing model (CAPM)
+  definition: A method used to estimate the cost of equity capital by comparing the return and risk characteristics
+    of an individual company’s shares to the average for all shares in the market. See Comparable earnings test,
+    Discounted cash flow model and Equity risk premium.
+- id: capitalattractionstandard
+  term: Capital attraction standard
+  definition: One of the Fair Return standards which requires that the return of a regulated utility permit incremental
+    capital to be attracted to the enterprise on reasonable terms and conditions. See Comparable investment standard,
+    Fair return standard and Financial integrity standard.
+- id: capitalcostallowance
+  term: Capital cost allowance (CCA)
+  definition: ': An income tax deduction allowed for certain fixed assets used in operating a business. CCA is similar
+    in nature to depreciation used for accounting purposes; however, the rates allowed are prescribed by income
+    tax regulations and are not intended to reflect an asset’s useful service life.'
+- id: capitalstructure
+  term: Capital structure
+  definition: The way in which a business is financed. It is generally expressed as a percentage breakdown of the
+    types of capital employed. For example, a utility could have a capital structure of 50% debt, 15% preferred
+    shares and 35% common equity.
+- id: capitalization
+  term: Capitalization
+  definition: Capital structure expressed in dollar amounts.
+- id: capitalizedoverheadorcostofoverheadduringconstruction
+  term: Capitalized overhead or cost of overhead during construction
+  definition: The amount of a company’s overhead expenditures allocated to the cost of acquisition or construction
+    of an asset. The total cost of the asset, including capitalized overhead and AFUDC, is depreciated over the
+    asset’s life.
+- id: carbonanodes
+  term: Carbon anodes
+  definition: Carbon anodes are the conventional anodes used to produce aluminum. When carbon anodes are used, the
+    reaction frees up oxygen in alumina which then reacts with the carbon in the anode to form CO2.
+- id: carboncaptureutilizationandstorage
+  term: Carbon capture, utilization, and storage (CCUS)
+  definition: A method of capturing and storing CO2 so that it is not released into the atmosphere, thereby reducing
+    GHG emissions. When utilized, the CO2 is made into another product. When stored, the CO2 is compressed, moved
+    by pipeline or tanker, and stored in some medium, such as a deep geological formation.
+- id: carbonfootprint
+  term: Carbon footprint
+  definition: The amount of greenhouse gases, mostly carbon dioxide, emitted by something (such as a person's activities
+    or a product's manufacture and transport) during a given period.
+- id: carbonhub
+  term: Carbon hub
+  definition: A carbon hub is an open access, multiclient CO2 storage facility (either for sequestration or Enhanced
+    Oil Recovery (EOR)) that could achieve low storage costs by using economies of scale.
+- id: carbonintensity
+  term: Carbon intensity
+  definition: The carbon intensity of a fuel is a measure of the GHG emissions from the extraction, refining, distribution,
+    and use of the fuel. It is measured in grams of CO2 equivalent per megajoule (gCO2e/MJ).
+- id: carbonneutrality
+  term: Carbon neutrality
+  definition: Refers to the balance of emitting and removing GHGs from the atmosphere, such that the net effect
+    is zero emissions. See Net-zero.
+- id: carbonppricing
+  term: Carbon pricing
+  definition: 'Carbon pricing is a means of attaching a cost to the right to emit one tonne of carbon dioxide equivalent
+    into the atmosphere. There are two main types of carbon pricing: a carbon tax applied to the carbon content
+    of fossil fuels and a cap-and-trade system. Carbon pricing improves the relative competitiveness of renewable
+    energy sources compared to fossil fuel sources.'
+- id: cashflowfromoperations
+  term: Cash flow from operations (CFO)
+  definition: The amount of cash generated by a company’s normal business operations. Positive CFO indicates that
+    a company is generating sufficient cash flow to maintain, and potentially grow its operations, without requiring
+    external financing. Also referred to as Operating cash flow.
+- id: cashworkingcapital
+  term: Cash working capital
+  definition: The amount of cash needed to allow for the time lag between the payment of ongoing operating expenses
+    and the collection of corresponding revenues. See Lead-lag study and Working capital.
+- id: catalyticcracking
+  term: Catalytic cracking
+  definition: A secondary crude oil refining process where a catalytic agent is used to break down larger heavier,
+    less valuable hydrocarbons such as vacuum gas oil or resid into lighter, higher-value products (gasoline and
+    diesel). It is one of the most important conversion processes in a refinery, allowing it to increase the production
+    of light products at refineries.
+- id: catalyticreforming
+  term: Catalytic reforming
+  definition: A refining process involving heat, pressure and catalysts in order to convert low octane naphtha from
+    crude oil distillation into high-octane reformate, a premium component for gasoline blending and petrochemical
+    feedstocks. High purity hydrogen is produced as a by-product which can be used for other refinery processes.
+- id: co2flooding
+  term: CO2 flooding
+  definition: CO2 flooding is a process of enhanced oil recovery, in which carbon dioxide is injected into oil-bearing
+    reservoirs increasing the amount of oil that can be extracted.
+- id: coalbedmethane
+  term: Coalbed methane (CBM)
+  definition: Natural gas that is trapped within coal seams. CBM production is considered unconventional because
+    the gas is adsorbed within the coal (i.e., the gas is stuck to the sides of coal’s pore spaces and fractures)
+    and can only be desorbed and flow into a well by first lowering pressures.
+- id: cogeneration
+  term: Cogeneration
+  definition: Production of electricity and another form of useful thermal energy, such as heat or steam, from the
+    same energy source. The byproduct heat from industrial processes can either be used to power an electrical generator,
+    or can be used for industrial purposes.
+- id: coke
+  term: Coke
+  definition: A carbon-rich solid that is created when heavy crude oil (including bitumen) is heated to high temperatures
+    to crack it into lighter oils and natural gas liquids. Also, a carbon-rich solid that is created when coal is
+    heated to high temperatures in an airless oven to drive off any water, gas, and coal tar inside the coal. Coke
+    is largely burned in blast furnaces during the smelting of steel.
+- id: coker
+  term: Coker
+  definition: Takes the lowest value bottoms material from the petroleum refining process and cracks it to the point
+    where the remaining yielding consists of only lighter fractions and solid carbon.
+- id: coking
+  term: Coking
+  definition: When high temperatures are applied to heavy crude oil (including bitumen) to crack it into lighter
+    oils and natural gas liquids while also creating a solid, carbon-rich byproduct called coke. Also, when coal
+    is baked in an airless oven at high temperatures so that the any water, gas, and coal tar inside the coal is
+    driven off and a solid, carbon-rich product called coke remains.
+- id: commercialsector
+  term: Commercial Sector
+  definition: A broad category including offices, stores, warehouses, government and institutional buildings, utilities,
+    communications, and other service industries.
+- id: commoditycharge
+  term: Commodity charge
+  definition: A charge applied only to quantities actually transported. Under a Straight Fixed Variable Toll Design
+    it includes only the variable costs of a pipeline. See Demand charge and Straight fixed variable toll design.
+- id: commoncarrier
+  term: Common carrier
+  definition: A pipeline company that is obligated to ship all product offered to it for transmission, without contract
+    and usually by monthly nominations. In the event that capacity is not available to meet all requests, services
+    are prorated amongst users. See Contract carrier.
+- id: commonequity
+  term: Common equity
+  definition: The book value of a company’s common shares outstanding including retained earnings or net of accumulated
+    deficits.
+- id: commonequityratio
+  term: Common equity ratio
+  definition: The ratio of the common equity to the total capital of a company.
+- id: comparableearningstest
+  term: Comparable earnings test
+  definition: A method used to estimate the cost of equity capital by comparing the returns earned by companies
+    with similar investment risk to that of the regulated utility’s operations. See Capital asset pricing model,
+    Discounted cash flow model, and Equity risk premium.
+- id: comparableinvestmentstandard
+  term: Comparable investment standard
+  definition: One of the Fair Return standards which requires that the return of a regulated utility be comparable
+    to the return available from the application of the invested capital to other enterprises of like risk. See
+    Capital attraction standard, Fair return standard and Financial integrity standard.
+- id: competitiverisk
+  term: Competitive risk
+  definition: The business risk that results from competition for customers at both the supply and market ends of
+    a pipeline system.
+- id: complianceaudit
+  term: Compliance audit
+  definition: An audit undertaken to determine whether a company is complying with legal or contractual provisions
+    relating to its accounts, or with rules, regulations, and prescribed procedures. In the case of a company regulated
+    by the CER, a compliance audit would primarily include the examination of the company’s accounts to ascertain
+    whether the company is complying with the Uniform Accounting Regulations and any orders issued by the Commission
+    of the CER.
+- id: condensate
+  term: Condensate
+  definition: A liquid like a very light oil, but is extracted from natural gas production. Condensate can be produced
+    at gas wells and at natural gas processing plants (where it is also known as pentanes plus).
+- id: contractcarrier
+  term: Contract carrier
+  definition: A pipeline company that provides transportation for remuneration to customers who have contracted
+    for the service over a specific period. See Common carrier.
+- id: contractdemand
+  term: Contract demand
+  definition: Quantity of natural gas specified in a firm service agreement that a pipeline is obligated to be able
+    to deliver on any day at a delivery point or delivery area.
+- id: conventionalcrudeoil
+  term: Conventional crude oil
+  definition: Crude oil that can flow into a well at commercial rates without the extensive use of technology after
+    the well is drilled, and without altering the natural viscosity of the oil.
+- id: conventionalnaturalgas
+  term: Conventional natural gas
+  definition: Natural gas that can flow into a well at commercial rates without the extensive use of technology
+    after the well is drilled.
+- id: donversionorcrackingrefineries
+  term: Conversion or Cracking refineries
+  definition: Includes the processes in a Hydroskimming Refinery plus catalytic cracking and/or hydrocracking units.
+    These conversion processes transform heavy products from distillation (mostly heavy gas oil) into lighter products,
+    suitable for gasoline, jet fuel, and diesel fuel production and petrochemical feedstock. Conversion refineries
+    are able to increase the yield of light, high-value products from the crude oil processed at the refinery.
+- id: coolingdegreedays
+  term: Cooling degree days (CDD)
+  definition: CDD is an index that represents cooling demand for homes, businesses, etc. CDD is the cumulative number
+    of days in a year for which the mean temperature is above a base temperature. In Canada, Environment Canada
+    uses 18 degrees Celsius and others use 15.4 or 15.4 degrees Celsius as a benchmark. In the US, the base temperature
+    is often 60 or 65 degrees Fahrenheit (16 or 18 degrees Celsius respectively).
+- id: costofservice
+  term: Cost of service
+  definition: The total cost of providing service, including operating and maintenance expenses, depreciation, amortization,
+    taxes, and return on rate base. For cost of service pipelines, it is approximately the same as its revenue requirement.
+    See Revenue requirement.
+- id: costofpreferredequitycapital
+  term: Cost of preferred equity capital
+  definition: The effective yield on a company’s preferred shares.
+- id: costreductionpolicies
+  term: Cost reduction policies
+  definition: Policies which reduce the cost of renewable projects. Such programs include government loan guarantees
+    which reduce finance costs by mitigating risk to the lender as well as tax breaks for renewable projects.
+- id: crosssubsidization
+  term: Cross-subsidization
+  definition: The provision of financial support to a company’s non-regulated operations by its regulated operations,
+    or vice versa, or between two regulated subsidiaries.
+- id: crowncorporation
+  term: Crown corporation
+  definition: An enterprise that is wholly owned by the federal or provincial government, and ultimately by the
+    Sovereign of Canada. Crown corporations are established by an act of legislation. Crown corporations can operate
+    at arm’s length, or partially independently, from the government.
+- id: crudeoil
+  term: Crude oil
+  definition: A mixture of liquid hydrocarbons in underground reservoirs that remains liquid at atmospheric pressure
+    and temperature. Crude oil may contain small amounts of sulphur and other non-hydrocarbons, but it does not
+    include liquids obtained from the processing of natural gas. It is refined into a variety of petroleum products
+    including gasoline, diesel, jet fuel and petrochemicals which are used to make many consumer and industrial
+    products.
+- id: cyclicsteamstimulation
+  term: Cyclic steam stimulation (CSS)
+  definition: A thermal process to produce in-situ bitumen. Steam is injected into the reservoir through a well
+    over a period of several months, decreasing the bitumen’s viscosity. Later, the steam is turned off and the
+    emulsion of water and bitumen flows back into the well over a period of several months. The process is repeated
+    for the economic life of the well.
+- id: dailycontractquantity
+  term: Daily contract quantity (DCQ)
+  definition: The maximum amount of energy per day that a customer can move under its transportation contract with
+    a pipeline.
+- id: debenture
+  term: Debenture
+  definition: A long-term corporate debt obligation that is not secured by any specific asset of the company, but
+    rather is based on the company’s general creditworthiness.
+- id: debttocapital
+  term: Debt-to-capital
+  definition: A company’s total interest bearing debt, both short and long term, relative to its total capital.
+    Total capital includes total interest bearing debt plus total shareholders’ equity. A higher ratio indicates
+    the company is funded by more debt than equity, implying greater financial risk.
+- id: deemedcapitalstructur
+  term: Deemed capital structure
+  definition: A notional capital structure used for toll-making purposes that may differ from a company’s actual
+    capital structure.
+- id: deepconversionorcokingrefineries
+  term: Deep conversion or Coking refineries
+  definition: A more advanced conversion refinery which includes catalytic cracking and/or hydrocracking units,
+    as well as coking units. A coker is able to convert the heaviest byproducts of crude distillation (resid) into
+    lighter product streams. These streams can be further processed by catalytic cracking and catalytic reforming
+    units to produce higher-value end-products.
+- id: deepcutfacilities
+  term: Deep-cut facilities
+  definition: A gas plant upstream of major gas-pipeline systems that extracts ethane and other natural gas liquids
+    using turbo-expander or absorption technologies. It can extract more ethane than a shallow-cut gas plant, but
+    less ethane than a straddle plant.
+- id: deferralaccount
+  term: Deferral account
+  definition: For regulatory purposes, generally, a type of account used to record revenues and expenses held in
+    abeyance for future disposition by a regulator.
+- id: deferredincometaxes
+  term: Deferred income taxes
+  definition: The amount by which income taxes determined on the basis of accounting income exceeds income taxes
+    payable. In a utility, this amount results primarily when capital cost allowance used in calculating taxable
+    income is larger than corresponding depreciation used in calculating accounting income. Deferred income taxes
+    are carried on the balance sheet of a company as a non-current liability. See Normalized income taxes, Flow-through
+    income taxes, and Capital cost allowance.
+- id: deliverability
+  term: Deliverability
+  definition: Deliverability is the estimated amount of supply available from a given area based on historical production
+    and individual well declines, as well as projected activity. Production may be less than deliverability due
+    to a number of factors, such as weather-related supply interruptions, and shut-in production due to insufficient
+    demand, strategic considerations or economics.
+- id: deliveryarea
+  term: Delivery area
+  definition: A geographic area within a toll zone that is comprised of multiple delivery points where shippers
+    receive delivery of their natural gas.
+- id: deliverypoint
+  term: Delivery point
+  definition: The point specified in a service agreement where a pipeline delivers gas to or for the account of
+    a shipper.
+- id: dilbitdilutedbitumen)
+  term: Dilbit (diluted bitumen)
+  definition: Dilbit is a crude oil blend made by combining produced bitumen with a diluent such as light naphtha.
+- id: diluent
+  term: Diluent
+  definition: Any lighter hydrocarbon (usually pentanes plus) added to heavy crude oil or bitumen to decrease its
+    viscosity for transport in crude oil pipelines or in rail cars.
+- id: dilution-of-equity
+  term: Dilution of equity
+  definition: The reduction in book value per share caused by the issuance of additional shares at less than the
+    book value per share of existing shares.
+- id: demandcharge
+  term: Demand charge
+  definition: A monthly charge which covers the fixed costs of a pipeline under a Straight Fixed Variable Toll Design.
+    The demand charge is based on the daily contracted quantity and is payable regardless of quantities transported.
+    See Straight fixed variable toll design.
+- id: demandsidemmanagement
+  term: Demand-side management
+  definition: Actions taken by a utility resulting in a sustained reduction in energy demand by its customers. This
+    can reduce or delay new capital investments in power plants, pipelines, or other infrastructure and improve
+    overall system efficiency.
+- id: depreciation
+  term: Depreciation
+  definition: A non-cash expense charged against earnings to write off the cost of an asset during its estimated
+    useful life.
+- id: discountedcashflowdfcmodel
+  term: Discounted cash flow (DCF) model
+  definition: A method used for estimating the cost of common equity based on the expected dividend yield of the
+    company’s shares and the expected future dividend growth rate. See Capital asset pricing model, Comparable earnings
+    test and Equity risk premium.
+- id: discoveredconventionalpetroleum
+  term: Discovered conventional petroleum
+  definition: Oil, gas, and natural gas liquids that have been determined to exist in a pool by the drilling of
+    one or more wells.
+- id: distanceofhaul
+  term: Distance of haul
+  definition: The distance the product is scheduled to be moved.
+- id: distillates
+  term: Distillates
+  definition: Hydrocarbon solvents produced from crude oil, which include kerosene, naphtha, and Stoddard solvent.
+- id: distributedsolar
+  term: Distributed (solar)
+  definition: Solar electricity generation systems that are sited on electricity end-user facilities. They are typically
+    installed on rooftops of residential and commercial buildings.
+- id: distributionpipelines
+  term: Distribution pipelines
+  definition: A system of relatively small diameter pipes that deliver products to individual homes or businesses,
+    usually within a city.
+- id: districtheating
+  term: District heating
+  definition: District heating is a system for distributing heat generated in a centralized location through a system
+    of pipes. It can be used for space and water heating, both for residential and commercial purposes.
+- id: drygas
+  term: Dry gas
+  definition: Natural gas which is low in natural gas liquids content.
+- id: edmontonparcrude
+  term: Edmonton par crude
+  definition: A light, sweet blend of conventionally produced crude oils in western Canada. It is typically priced
+    at Edmonton, Alberta and is also referred to as Mixed Sweet Blend (MSW). See Mixed sweet blend.
+- id: emergingtechnologies
+  term: Emerging Technologies
+  definition: See Alternative or Emerging technologies.
+- id: enduseenergy
+  term: End-use Energy
+  definition: See Secondary energy use.
+- id: energyefficiency
+  term: Energy efficiency
+  definition: Technologies and measures that reduce the amount of energy and/or fuel required for the same amount
+    of work.
+- id: energyintensity
+  term: Energy intensity
+  definition: The amount of energy used per unit of activity. Two common ways energy intensity is measured are,
+    energy use per capita, and energy use per unit of GDP.
+- id: enhancedoilrecovery
+  term: Enhanced oil recovery (EOR)
+  definition: Crude oil extracted from reservoirs once pressures are depleted to a point where natural production
+    is no longer economically possible, even with artificial lifts like pump jacks. This includes additional recovery
+    processes such as pressure maintenance, cycling, water flooding, thermal methods, chemical flooding, and the
+    use of miscible and immiscible displacement fluids.
+- id: entericfermentation
+  term: Enteric fermentation
+  definition: A ruminant livestock animal digestive process that results in the accumulation and release of methane.
+- id: environmentalsocialandgovernmentalesginvesting
+  term: Environmental, social, and governmental (ESG) investing
+  definition: Considerations that can be used as criteria alongside financial factors by socially conscious investors
+    to screen potential capital investments.
+- id: equitycapital
+  term: Equity capital
+  definition: The total of preferred and common equity. See Common equity and Preferred equity.
+- id: equityriskpremiumofcommonshares
+  term: Equity risk premium of common shares
+  definition: The spread reflecting the difference in risk associated with holding common equity as opposed to debt
+    or preferred shares. The cost of common equity capital is usually greater than the cost of debt or preferred
+    shares.
+- id: equityriskpremiummodel
+  term: Equity risk premium (ERP) model
+  definition: Family of methods used for estimating the cost of common equity which includes the Capital Asset Pricing
+    Model. It is based on the premise that an investment in common equity carries greater risk than an investment
+    in either debt or preferred shares and, therefore, requires a higher return, or premium, over that required
+    for bonds or preferred shares. See Capital Asset Pricing Model, Comparable Earnings Test and Discounted Cash
+    Flow Model. See Capital asset pricing model, Comparable earnings test and Discounted cash flow model.
+- id: ethane
+  term: Ethane
+  definition: Is a hydrocarbon gas with the molecular formula C2H6. Ethane is mostly used to make ethylene, which
+    is used to make plastics.
+- id: extraordinaryretirement
+  term: Extraordinary retirement
+  definition: A retirement of a depreciable asset that results from circumstances not foreseen when determining
+    the asset’s service life for depreciation purposes.
+- id: fairreturnstandard
+  term: Fair return standard
+  definition: A three-part standard comprised of the comparable investment, financial integrity and capital attraction
+    standards.
+- id: feedintariffs
+  term: Feed-in tariffs (FITs)
+  definition: Usually offer standardized long-term contracts and administratively set payments, often specific to
+    a particular technology. Standard terms make it easier for small projects and new entrants to qualify.
+- id: feedstock
+  term: Feedstock
+  definition: Natural gas or other hydrocarbons used to create another product, such as petrochemicals (e.g., ethane
+    is the feedstock to produce ethylene).
+- id: ffointerestcoverage
+  term: FFO interest coverage
+  definition: Funds from Operations (FFO) over gross interest incurred before subtracting capitalized interest and
+    interest income. See Funds from operations and Interest coverage ratio.
+- id: ffotototaldebtratio
+  term: FFO to total debt ratio
+  definition: Funds from Operations (FFO) over long-term debt (including amount for operating lease debt equivalent)
+    plus current maturities, commercial paper and other short-term borrowings.
+- id: fieldgasplant
+  term: Field gas plant
+  definition: A natural gas processing facility that separates a stream of raw natural gas into methane (sales gas
+    or marketable gas) and natural gas liquids, and removes impurities such as water, sulphur, and carbon dioxide.
+    See also Marketable natural gas, Field production (of natural gas liquids), Deep-cut facilities, and Shallow-cut
+    facilities.
+- id: fieldproduction
+  term: Field production
+  definition: Natural gas liquids produced at natural gas processing plants. Natural gas processing plants remove
+    byproducts and impurities in a stream of raw natural gas. These byproducts are primarily NGLs, while impurities
+    include water, carbon dioxide, and sulphur. Natural gas at the outlet of the plant is known as “sales gas” and
+    is primarily methane.
+- id: financialintegritystandard
+  term: Financial integrity standard
+  definition: One of the Fair Return standards that requires that the return of a regulated utility enable the financial
+    integrity of the regulated enterprise to be maintained. See Capital attraction standard, Comparable investment
+    standard and Fair return standard.
+- id: financialleverage
+  term: Financial leverage
+  definition: The proportion of debt in relation to equity in a utility’s capital structure. The higher the long-term
+    debt, the greater the financial leverage. Shareholders benefit from financial leverage to the extent that return
+    on the borrowed money exceeds the interest costs and that shares rise in market value. Leverage also means required
+    interest and principal payments and thus, ultimately, the risk of default (higher financial risk).
+- id: financialrisk
+  term: Financial Risk
+  definition: The risk inherent in a company’s capital structure. Financial risk increases as the proportion of
+    debt increases in relation to shareholders’ equity.
+- id: firmtransportationservice
+  term: Firm transportation (FT) service
+  definition: A firm (non-interruptible) gas transportation service which provides for the delivery of gas up to
+    a specific maximum daily quantity. The shipper must pay a monthly demand charge regardless of the quantities
+    transported and a commodity charge for the quantities actually transported. See Demand charge and Commodity
+    charge.
+- id: fixedassets
+  term: Fixed assets
+  definition: Assets such as land, building, equipment, and machinery which are acquired for use in the operation
+    of a business.
+- id: fixedcosts
+  term: Fixed costs
+  definition: Costs that remain, at least in the short run, relatively constant and do not vary with throughput.
+    Examples are interest expense, depreciation charges, and property taxes. See Variable costs.
+- id: fixedtoll
+  term: Fixed toll
+  definition: A toll which does not vary with changes in throughput or expense variances. Fixed tolls are usually
+    based on forecasts of costs and throughput for a test year. See Variable cost-of-service toll.
+- id: flowthroughincometaxmethodology
+  term: Flow-through income tax methodology
+  definition: A method of estimating income taxes payable for a period based on taxable income as opposed to accounting
+    income.
+- id: focusedaudit
+  term: Focused audit
+  definition: An audit restricted to a particular management function or operation. See Management audit.
+- id: fossilfuel
+  term: Fossil fuel
+  definition: Hydrocarbon-based fuel sources such as coal, natural gas, natural gas liquids and crude oil extracted
+    from geological formations.
+- id: fractionation
+  term: Fractionation
+  definition: The process of separating a stream of natural gas liquids into individual components, or fractions.
+    See Fractionator.
+- id: fractionationspreadfracspread
+  term: Fractionation spread (frac spread)
+  definition: A “fractionation spread”, or “frac spread”, is the NGL price minus the natural gas price on an energy-equivalent
+    basis. This indicates the potential profit received by gas processors for removing NGL from the gas stream.
+- id: fractionator
+  term: Fractionator
+  definition: A natural gas liquids processing facility that separates a stream of natural gas liquids into its
+    individual components, or fractions (for example, ethane, propane, butanes, and pentanes plus).
+- id: freeholdland
+  term: Freehold land
+  definition: Land with its petroleum rights owned by its surface owners.
+- id: frontierareas
+  term: Frontier areas
+  definition: Generally, the northern and offshore areas of Canada.
+- id: fugitivegasemissions
+  term: Fugitive gas emissions
+  definition: Releases of methane from leaks in the pipeline system.
+- id: fulltimeequivalent
+  term: Full-time equivalent (FTE)
+  definition: The equivalent of one full-time employee position in terms of the number of hours worked during a
+    year. An FTE can be made up of allocations from different employee positions.
+- id: fundsfromoperations
+  term: Funds from operations (FFO)
+  definition: Net income from continuing operations plus depreciation, amortization, deferred income taxes and non-cash
+    items, and interest expense. See FFO interest coverage.
+- id: gatheringpipelines
+  term: Gathering pipelines
+  definition: A system of mid-sized pipes that deliver products from individual sources of supply, such as well,
+    to storage or processing facilities.
+- id: generationelectricity
+  term: Generation (electricity)
+  definition: The process of producing electric energy by transforming other forms of energy. Also, the amount of
+    energy produced.
+- id: geothermalenergy
+  term: Geothermal energy
+  definition: The use of geothermal heat from the earth’s molten core to generate electricity. Also used to describe
+    ground-source heating and cooling (also known as geoexchange or ground-source heat pump).
+- id: globaladjustment
+  term: Global adjustment
+  definition: See Hourly Ontario energy price.
+- id: gravitybasedstructure
+  term: Gravity-based structure
+  definition: An offshore oil production platform that is held in place by gravity (as opposed to a floating platform).
+    The Hibernia and Hebron oil platforms in offshore Newfoundland and Labrador are examples of gravity-based structures.
+- id: greenhousegas
+  term: Greenhouse gas (GHG)
+  definition: A gas such as carbon dioxide, methane, or nitrogen oxide, which actively contributes to the atmospheric
+    greenhouse effect. Greenhouse gases also include gases generated through industrial processes, such as hydroflurocarbons,
+    perflurocarbons and sulphur hexafluoride.
+- id: greenhydrogen
+  term: Green hydrogen
+  definition: Hydrogen gas (H2) is produced using electrolysis, where electricity is passed through water, separating
+    H2O molecules into hydrogen (H) and oxygen (O). To be considered green hydrogen, the electricity must come from
+    low-emitting energy sources like wind, solar, or hydroelectricity. See Hydrogen, Blue hydrogen, Grey hydrogen.
+- id: greyhydrogen
+  term: Grey hydrogen
+  definition: Hydrogen gas (H2) produced by separating hydrogen from carbon in natural gas, such as by applying
+    high-temperature steam (also called steam-methane reforming). The process also produces carbon dioxide (CO2),
+    which is vented to the atmosphere. See Hydrogen, Blue hydrogen, Green hydrogen.
+- id: gridparity
+  term: Grid parity
+  definition: Occurs when an alternative energy source can generate electricity at a cost that is less than, or
+    equal to, the cost of traditional technologies. See Socket parity.
+- id: gridscalebatterystorage
+  term: Grid-scale battery storage
+  definition: A type of energy storage system that collects energy from the electrical grid or a power plant using
+    electrochemical cells, then discharges energy to provide electricity or other grid services when needed.
+- id: grossdomesticproduct
+  term: Gross domestic product (GDP)
+  definition: GDP is a measure of economic activity within a country. It is the market value of all goods and services
+    produced within Canada’s borders, normally within a specific time period (e.g., annual).
+- id: grossplant
+  term: Gross plant
+  definition: The original cost of fixed assets before deducting accumulated depreciation. See Net plant.
+- id: group1company
+  term: Group 1 company
+  definition: In general, Group 1 companies regulated by the CER are those with more extensive systems and as such
+    are subject to a greater degree of regulatory oversight than Group 2 companies.
+- id: group2company
+  term: Group 2 company
+  definition: Group 2 companies regulated by the CER tend to be smaller, have fewer shippers and are subject to
+    a lighter degree of regulatory oversight since they are regulated on a complaints basis.
+- id: heatcontentnaturalgas
+  term: Heat content (natural gas)
+  definition: The amount of energy per volume of the natural gas stream. Natural gas produced from oil and gas wells
+    primarily consists of methane but can also contain natural gas liquids (NGLs) like ethane, propane, and butane.
+    Because NGLs burn hotter than methane on a per volume basis, gas that is “rich” in NGLs has higher heat content
+    than “lean” gas.
+- id: heatingdegreedays
+  term: Heating degree days (HDD)
+  definition: HDD is an index that indicates heating demand for homes, businesses, etc. HDD is the cumulative number
+    of days in a year for which the mean temperature falls below a base temperature. In Canada, Environment Canada
+    uses 18 degrees Celsius and others use 15.4 or 15.4 degrees Celsius as a benchmark. In the US, the base temperature
+    is often 60 or 65 degrees Fahrenheit (16 or 18 degrees Celsius respectively).
+- id: heavycrudeoil
+  term: Heavy crude oil
+  definition: Generally, a crude oil that is very viscous and has a density greater than 900 kg/m³, or an API gravity
+    below 25.
+- id: hedge
+  term: Hedge (or Financial hedge)
+  definition: A hedge is an investment position intended to offset price fluctuations or price risk in the future
+    sale or purchase of a commodity or security.
+- id: henryhub
+  term: Henry Hub
+  definition: Henry Hub is the pricing point for natural gas futures traded on the New York Mercantile Exchange.
+    The hub is located in Louisiana at the interconnection of numerous natural gas pipelines.
+- id: heritageassets
+  term: Heritage assets
+  definition: Existing generation (and/or transmission) equipment and facilities which were built well in the past
+    and are largely paid for.
+- id: hourlyontarioenergyprice
+  term: Hourly Ontario energy price (HOEP)
+  definition: 'Ontario electricity prices are influenced by two major components: the HOEP and the Global Adjustment.
+    Ontario generators sell electricity in the wholesale market where the HOEP is determined. However, most of the
+    generators are covered by contracts and regulations that guarantee specific rates for the electricity they produce.
+    The Global Adjustment is the difference between the HOEP and those guaranteed rates. When the HOEP is lower
+    than the contracted or regulated rates, the Global Adjustment is positive and represents a payment from consumers
+    to generators. When the HOEP is higher than the guaranteed rates, the Global Adjustment is negative and represents
+    a payment from generators back to consumers.'
+- id: hydraulicallyfractured
+  term: Hydraulically fractured
+  definition: Occurs when fluids are pumped down a well and into a formation at very high pressures until the formation
+    cracks, creating fractures through which oil and gas in the formation can flow into the well. Often done in
+    multiple stages.
+- id: hydroelectricgeneration
+  term: Hydroelectric generation
+  definition: A form of renewable energy that harnesses the energy in flowing water to generate electricity. This
+    includes large or reservoir hydro and small or run-of-river hydro.
+- id: hydrogen
+  term: Hydrogen
+  definition: Hydrogen is a naturally occurring element on Earth, normally found in combination with other elements,
+    such as with oxygen in water (H2O) or with carbon in fossil fuels. By applying energy, hydrogen ions can be
+    extracted from water, fossil fuels, or biomass and combined into hydrogen gas (H2), a colourless, odourless,
+    flammable gas that can carry energy or be used as a fuel. See Grey hydrogen, Blue hydrogen, Green hydrogen.
+- id: hydroprocessing
+  term: Hydroprocessing
+  definition: Any of several chemical engineering processes including hydrogenation, hydrocracking and hydrotreating,
+    especially as part of oil refining. Hydroprocessing is necessary to remove pollutants like sulfur, nitrogen
+    and heavy metals from fuel oils, as well as in the process of catalytic hydrocracking, where large hydrocarbon
+    molecules are cracked into shorter ones that can be used as fuel oils.
+- id: hydroskimmingrefineries
+  term: Hydroskimming refineries
+  definition: Includes crude distillation and support services as well as secondary processes such as catalytic
+    reforming, hydro-treating and product blending. These refineries have the advantage over topping refineries
+    that they can manufacture low sulphur diesel and heating oil and high-octane gasoline, but they may produce
+    up to half of their output as fuel oil.
+- id: Immiscibledisplacementfluids
+  term: Immiscible displacement fluids
+  definition: Two or more liquids incapable of being mixed to form a homogeneous substance.
+- id: incentiveregulation
+  term: Incentive regulation
+  definition: Alternatives or modification to cost of service regulation where a utility’s profit is at least partly
+    dependent on efficiency gains.
+- id: incrementaltolls
+  term: Incremental tolls
+  definition: Tolls resulting from a toll design methodology that assigns capital and operating costs of new facilities
+    to their own cost pool, separate from the costs of the existing facilities. Tolls are designed so existing shippers
+    pay a toll reflecting the cost of service associated with existing facilities; "new" shippers pay a toll reflecting
+    the cost of service associated with new facilities.
+- id: incrementaltransportationcost
+  term: Incremental transportation cost
+  definition: ': The variable cost of transporting an additional unit of throughput. See Fixed costs and Variable
+    costs.'
+- id: indigenouscommunities
+  term: Indigenous communities
+  definition: Refers to a place where Indigenous people live and where some Indigenous political organization has
+    local authority, such as in a reserve.
+- id: industrialsector
+  term: Industrial Sector
+  definition: This sector includes heavy industry, oil and gas, light manufacturing, forestry, fisheries, agriculture,
+    construction, mining, waste, and others.
+- id: indigenoustraditionalterritory
+  term: Indigenous traditional territory
+  definition: A traditional Indigenous territory, or land, describes the ancestral and contemporary connections
+    of Indigenous peoples to a geographical area.
+- id: inertanodes
+  term: Inert anodes
+  definition: Inert anodes avoid the formation of CO2 and have a byproduct of pure oxygen.
+- id: initialproductionrate
+  term: Initial production rate (IP rate)
+  definition: Generally, the highest monthly production rate for an oil or gas well, often near the start of its
+    production. More specifically, the CER typically uses an average of the first three months of production to
+    determine a well’s IP rate.
+- id: inpitextraction
+  term: In-pit extraction
+  definition: A technique, currently in development, that involves separating oil sands ore into its component parts
+    within the extraction pit of the operation.
+- id: insiturecovery
+  term: In situ recovery
+  definition: When bitumen is recovered through wells, generally because the reservoir is too deep to permit surface
+    mining. In situ typically uses steam or solvents such as propane or butane to reduce the bitumen’s viscosity
+    so that it can be recovered.
+- id: integratedminingupgradingplant
+  term: Integrated mining/upgrading plant
+  definition: A combined mining and upgrading operation where oil sands are mined from open pits. The bitumen is
+    then separated from the sand and upgraded by coking or hydroprocessing.
+- id: interestcoverageratio
+  term: Interest coverage ratio
+  definition: The number of times that net income for a given year, before interest expense and income taxes, covers
+    the annual interest expense. This ratio is one measure of the creditworthiness of a company.
+- id: intergenerationalinequity
+  term: Intergenerational inequity
+  definition: Inequity occurring when a generation of customers does not pay, at the expense of another generation,
+    its fair share of the costs incurred by the utility in providing service.
+- id: interimtollorder
+  term: Interim toll order
+  definition: An order authorizing a company to charge specified tolls until a final order is made. At the discretion
+    of the Commission of the CER, revised tolls may be made applicable from the date the interim tolls became effective.
+    In such case, any difference between the final and interim tolls during that interim period are refunded to,
+    or recovered from, shippers.
+- id: interruptibletransportationservice
+  term: Interruptible transportation service (IT)
+  definition: Gas transportation service provided only when capacity is available. The shipper only pays a toll
+    for the quantities actually transported.
+- id: investmentrisk
+  term: Investment risk
+  definition: The total of a company’s business risk and financial risk. See Business risk and Financial risk.
+- id: isomerization
+  term: Isomerization
+  definition: A chemical reaction in which a lineal molecule is transformed into a molecule with the same atoms
+    in a different arrangement (branched). Isomerization units are used at refineries to transform normal butane
+    into isobutane, a feedstock for alkylation units.
+- id: iterative
+  term: Iterative
+  definition: A process of repeating and refining the analysis until the end goal is reached.
+- id: landuselandusechangeandforestry
+  term: Land-use, land-use change and forestry (LULUCF)
+  definition: This category accounts for GHG exchanges between the atmosphere and managed lands, resulting from
+    human-caused land use and land-use changes.
+- id: laterals
+  term: Laterals
+  definition: Pipelines that tie into a trunk line, generally part of either a gathering or distribution system.
+    See Trunk lines.
+- id: leadlagstudy
+  term: Lead-lag study
+  definition: A study used to estimate an appropriate cash working capital allowance for inclusion in rate base.
+    The studies estimate the average number of days between payment of ongoing operating expenses and the collection
+    of corresponding revenues. See Cash working capital.
+- id: levelizedcostofenergy
+  term: Levelized cost of energy (LCOE)
+  definition: The levelized cost of energy (LCOE) determines how much money must be made per unit of energy (ex.
+    MWh of electricity, or any other type of energy) to recover the lifetime cost of the energy system. This includes
+    initial capital investment, maintenance cost, fuel cost, operational cost, and the discount rate.
+- id: lightcrudeoil
+  term: Light crude oil
+  definition: Generally, crude oil with low viscosity which flows freely at room temperature. There are varying
+    thresholds for the line between light and medium crude oils. Also a collective term used to refer to conventional
+    light crude oil, upgraded heavy crude oil and pentanes plus.
+- id: lightemittingdiode
+  term: Light emitting diode (LED)
+  definition: A device that emits light when conducting current and is used in electronic displays, indoor and outdoor
+    lighting, etc. LEDs transform most of the energy that they consume into visible light rather than heat. Because
+    of this, LEDs reduce electricity consumption by 85 % compared to incandescent lights and 40 % compared to fluorescent
+    lamps.
+- id: lighthandedregulatio
+  term: Light-handed regulation
+  definition: Regulatory approval of tolls resulting from arm’s length negotiations, rather than calculated on a
+    cost of service basis, and subject to challenge only under a complaint proceeding.
+- id: lignite
+  term: Lignite
+  definition: A type of coal with a heat content lower than bituminous or sub-bituminous coal. It is often referred
+    to as brown coal and is used almost exclusively as fuel for steam-electric power generation.
+- id: liquefiednaturalgas
+  term: Liquefied natural gas (LNG)
+  definition: Liquefied natural gas is natural gas cooled below -162 degrees Celsius (-260 degrees Fahrenheit) so
+    that it condenses into a liquid. This reduces the volume of gas by more than 600 times, allowing for efficient
+    transport via LNG tanker or trucks.
+- id: loadfacto
+  term: Load factor
+  definition: Generally, the ratio of the average contract quantity to the maximum quantity available to be contracted
+    for the same period, usually expressed over a year and as a percentage. See Utilization rate.
+- id: managementaudit
+  term: Management audit
+  definition: An audit to assess the economy, efficiency, and effectiveness of management functions and operations.
+- id: marketbasedrate
+  term: Market-based rate
+  definition: Pipeline tolls based on market conditions rather than on the pipeline’s costs. See Cost of service.
+- id: marketrisk
+  term: Market risk
+  definition: The business risk that stems from the overall size of the market and the market share that a pipeline
+    is able to capture.
+- id: markettobookratio
+  term: Market-to-book ratio
+  definition: The ratio of the market price of a common share to its book value.
+- id: marketablenaturalgas
+  term: Marketable natural gas
+  definition: The volume of gas that can be sold to the market after impurities are removed and volumes used to
+    power surface facilities are subtracted.
+- id: Materialsurplustosecurity
+  term: Material surplus to security
+  definition: Items included in material and supplies inventory that are in excess of normal requirements for maintenance
+    or the continuous operation of a pipeline.
+- id: metallurgicalcoal
+  term: Metallurgical coal
+  definition: Anthracite or high grade bituminous coal primarily used in the steelmaking industry because of its
+    high heat content.
+- id: middledistillates
+  term: Middle distillates
+  definition: Range of medium weight refined petroleum products that include gasoline, diesel, and jet fuel.
+- id: miscibledisplacementfluids
+  term: Miscible displacement fluids
+  definition: Two or more liquids that will mix together to form a homogeneous substance.
+- id: miningextractionandupgradingplant
+  term: Mining, extraction, and upgrading plant
+  definition: A combined mining and upgrading operation where oil sands are mined from open pits. The bitumen is
+    then separated from the sand and upgraded by coking or hydroprocessing.
+- id: mixedsweetblend
+  term: Mixed sweet blend (MSW)
+  definition: A light, sweet blend of conventionally produced crude oils in western Canada with an API gravity of
+    around 40 degrees. It is typically priced at Edmonton, Alberta and is often called Edmonton Par Crude. See Edmonton
+    par crude.
+- id: modifiedfixedvariabletolldesign
+  term: Modified fixed variable (MFV) toll design
+  definition: A toll design similar to Straight Fixed Variable with the exception that certain fixed costs, for
+    example return on equity and associated income taxes, are shifted from the demand toll to the commodity toll.
+    See Straight fixed variable toll design.
+- id: multistagehydraulicfracturing
+  term: Multi-stage hydraulic fracturing
+  definition: When a formation is hydraulically fractured over multiple places in a well to create a long zone of
+    reservoir. See Hydraulically fractured.
+- id: nameplatecapacity
+  term: Nameplate capacity
+  definition: The physical limit to the amount of product that a pipeline can safely carry. Due to operational constraints,
+    it is generally not possible for a pipeline to operate at 100% of its nameplate capacity all the time. See Available
+    capacity.
+- id: naturalgas
+  term: Natural gas
+  definition: A naturally occurring gas comprised primarily of methane and other hydrocarbons. It is used as a source
+    of energy for heating, cooking, and used in the production electricity.
+- id: naturalgasliquids
+  term: Natural gas liquids (NGLs)
+  definition: Hydrocarbons recovered from natural gas or condensate as liquids when they are under slightly higher
+    pressures and slightly lower temperatures. These liquids include, but are not limited to, ethane, propane, butanes
+    and pentanes plus.
+- id: naturalgasreserves
+  term: Natural gas reserves
+  definition: Natural gas reserves are defined as the total amount of remaining marketable gas in discovered pools
+    that can be extracted in current economic conditions.
+- id: negativeaalvagevalue
+  term: Negative salvage value
+  definition: The amount by which the cost of removing an asset from service exceeds the salvage proceeds.
+- id: negotiatedsettlement
+  term: Negotiated settlement
+  definition: An agreement between a pipeline company, its shippers and other interested parties concerning issues
+    related to the company’s revenue requirement, tolls, tariffs, and operational matters. Negotiated Settlements
+    are filed with the CER pursuant to the Guidelines for Negotiated Settlements [Folder 157025].
+- id: netavailableforexport
+  term: Net available for export
+  definition: Total domestic production of a commodity that would be available for export less its domestic demand.
+    The remainder equals the net available for export.
+- id: netexports
+  term: Net exports
+  definition: Actual exports minus imports of a commodity.
+- id: netback
+  term: Netback
+  definition: The effective price to the producer of natural gas, based on the downstream market price less any
+    charges for delivering the gas to market.
+- id: netbackprice
+  term: Netback price
+  definition: The value producers receive for crude oil and natural gas, usually determined by the market price
+    less transportation costs.
+- id: netmetering
+  term: Net-metering
+  definition: These programs don’t offer long-term contracts but allow end-users to generate their own electricity
+    and either sell their excess production to the grid, or use it to offset purchased power.
+- id: netplant
+  term: Net plant
+  definition: Gross plant less associated accumulated depreciation. See Gross plant or Plant in service.
+- id: netproceeds
+  term: Net proceeds
+  definition: Proceeds from the disposition of an asset or from the issue of securities after deducting the related
+    expenses.
+- id: netzero
+  term: Net-zero
+  definition: Refers to the balance of emitting and removing GHGs from the atmosphere, such that the net effect
+    is zero emissions. See Carbon neutrality.
+- id: nitnovainventorytransfer
+  term: NIT (Nova inventory transfer)
+  definition: The Nova Inventory Transfer, or NIT, is the pricing point used for natural gas sourced from the Western
+    Canadian Sedimentary Basin (WCSB). As the natural gas trading hub located in Alberta, NIT is the commercial
+    mechanism that overlays the Nova Gas Transmission Ltd. (NGTL) pipeline network, and is connected to several
+    export markets and storage.
+- id: nithhdifferential
+  term: NIT-HH differential
+  definition: The difference in price between natural gas sold in Alberta and Louisiana.
+- id: nomination
+  term: Nomination
+  definition: A precise listing of the quantities of energy to be transported under a contract during a specified
+    time period which a shipper provides to the pipeline.
+- id: normalizedincometaxes
+  term: Normalized income taxes
+  definition: An estimate of income taxes based on accounting income. The estimate may vary from the income taxes
+    payable because certain revenues and expenses are recognized for account at different times than they are for
+    tax purposes. See Deferred income taxes, Flow-through income taxes, and Capital cost allowance.
+- id: nuclearfission
+  term: Nuclear fission
+  definition: The process of splitting apart a nuclei which generates energy.
+- id: oceanenergy
+  term: Ocean energy
+  definition: Includes all forms of energy derived from the sea including tidal energy, wave energy, ocean current
+    energy, salinity gradient energy and ocean thermal gradient energy.
+- id: olefins
+  term: Olefins
+  definition: A group of petrochemicals which are key in the production of plastics. Olefins are typically produced
+    at crude oil refineries or by steam cracking NGLs at petrochemical facilities. Examples of olefins include ethylene,
+    propylene, butylene and isobutylene.
+- id: oilinplace
+  term: Oil-in-place (OIP)
+  definition: Is the volume of oil estimated to exist in a reservoir.
+- id: oilsands
+  term: Oil sands
+  definition: Naturally occurring, loosely consolidated sandstones whose pore spaces are largely filled with bitumen.
+- id: oilsandsoffgas
+  term: Oil sands off-gas
+  definition: A mixture of hydrogen and light hydrocarbon gases produced when bitumen is upgraded to synthetic crude
+    oil.
+- id: openseason
+  term: Open season
+  definition: A process in which a pipeline company offers either existing or new capacity to the market and receives
+    bids for that capacity from market participants.
+- id: operatedoilproduction
+  term: Operated oil production
+  definition: Operated production refers to crude oil production, including bitumen, assigned to the company responsible
+    for operating the well or mine.
+- id: operatingriskoroperationalrisk
+  term: Operating risk or Operational risk
+  definition: The risk to the income-earning capability of the assets that arises from technical and operational
+    factors.
+- id: pacificbasin
+  term: Pacific Basin
+  definition: Refers to countries residing beside or within the Pacific Ocean and its related waters.
+- id: peakdemand
+  term: Peak demand
+  definition: The maximum load consumed during a specified period of time.
+- id: pentanesplus
+  term: Pentanes plus
+  definition: A liquid like a very light oil that is extracted from natural gas at gas-processing plants and is
+    also produced at refineries.
+- id: padd
+  term: Petroleum Administration for Defense District (PADD)
+  definition: The United States Petroleum Administration for Defense Districts are five geographical regions for
+    crude oil analysis. PADD I is the East Coast, PADD II is the Midwest, PADD III is the Gulf Coast, PADD 4 is
+    the Rocky Mountains, and PADD V is the West Coast, including Alaska and Hawaii.
+- id: petroleumcoke
+  term: Petroleum coke
+  definition: A carbon-rich byproduct of crude oil refining.
+- id: petroleumproduct
+  term: Petroleum product
+  definition: A wide range of products refined from crude oil, such as gasoline, diesel, heating oil, and jet fuel,
+    among others. See Refined petroleum product.
+- id: photovoltaicsolar
+  term: Photovoltaic (PV) solar
+  definition: Technology that converts sunlight into electricity at the atomic level with solar PV cells.
+- id: pipeline
+  term: Pipeline
+  definition: A line that is used or to be used for the transmission of oil, gas, or any other commodity.
+- id: plantaccount
+  term: Plant account
+  definition: An account listed in either Schedule IV of the Gas Pipel=ine Uniform Accounting Regulations or Schedule
+    II of the Oil Pipeline Uniform Accounting Regulations, as appropriate.
+- id: plantinservice
+  term: Plant in service
+  definition: The costs of fixed assets that are used in the provision of utility service. See Rate base.
+- id: postagestamprate
+  term: Postage stamp rate
+  definition: For pipelines, a toll that is charged per unit transported regardless of the distance travelled and
+    the points of origin and destination.
+- id: preferredequity
+  term: Preferred equity
+  definition: The book value of preferred shares outstanding.
+- id: '>priceearningsratio'
+  term: Price-earnings (P/E) ratio
+  definition: The market price of a company’s common shares divided by its earnings per share.
+- id: primaryenergydemand
+  term: Primary energy demand
+  definition: Primary demand is the total energy used in Canada, including energy to generate electricity.
+- id: proforma
+  term: Pro forma
+  definition: Describes a presentation of data, typically financial statements, where the data reflects the world
+    on an "as if" basis; for example, financial statements that are adjusted to reflect a projected transaction.
+    Can also be a sample such as a pro forma contract.
+- id: propane
+  term: Propane
+  definition: Is a hydrocarbon with the molecular formula C3H8. Propane is a gas at room temperature and pressure,
+    but condenses into a liquid when pressurized, such as when stored in a propane tank.
+- id: provenoilreserves
+  term: Proven oil reserves
+  definition: Quantities of petroleum that can be estimated with reasonable certainty to be commercially recoverable
+    under current economic conditions, operating methods, and government regulations.
+- id: puresolvents
+  term: Pure solvents
+  definition: An oil sands production method that injects heated solvents (typically a mixture of natural gas liquids)
+    into a reservoir.
+- id: ratebase
+  term: Rate base
+  definition: The amount of investment (for example, in a pipeline system) on which the company is authorized to
+    earn a return. It typically includes net plant in service plus an allowance for working capital.
+- id: realorconstantdollar
+  term: Real or constant dollar
+  definition: Because of inflation, the purchasing power of the dollar changes over time. So that dollar values
+    from one year can be compared to those of another year, they are converted from current (also called nominal
+    or actual) dollars to constant (or real) dollars. This is done by dividing the current dollar data by a price
+    index that measures changes in the prices of goods and services over time. In this way, the impact of inflation
+    is eliminated when comparing data.
+- id: receiptpoint
+  term: Receipt point
+  definition: The point specified in a service agreement where gas is delivered to the pipeline by or for the account
+    of a shipper.
+- id: refinedpetroleumproduct
+  term: Refined petroleum product
+  definition: A wide range of products refined from crude oil, such as gasoline, diesel, heating oil, and jet fuel,
+    among others. See Petroleum product.
+- id: refinery
+  term: Refinery
+  definition: A facility that processes crude oil (conventional or synthetic) to produce refined petroleum products
+    like gasoline, jet fuel, asphalt, lubricants, and diesel.
+- id: regulatoryrisk
+  term: Regulatory risk
+  definition: The risk to the income-earning capability of the assets that arises due to the method of regulation
+    of the company.
+- id: regulatorytargetsrrenewableportfoliostandards
+  term: Regulatory targets or renewable portfolio standards (RPS)
+  definition: Adopted by many Canadian jurisdictions, mandate that a certain percentage of electricity should be
+    generated from renewable sources by a certain date.
+- id: reliabilityelectricity
+  term: Reliability (electricity)
+  definition: The relative performance of any part of an electricity system, which results in electricity being
+    delivered to customers within acceptable standards, in the amount desired, when required. Reliability can be
+    measured by frequency, duration, or magnitude of adverse effects on electricity supply.
+- id: renewablenaturalgas
+  term: Renewable natural gas
+  definition: Renewable natural gas (RNG) is gas produced from gasses trapped in landfills or from the breakdown
+    of organics in sealed tanks, and then processed to remove impurities. RNG is indistinguishable from natural
+    gas and can be injected in gas networks for its use as a fuel.
+- id: requestsforproposals
+  term: Requests for proposals (RFPs)
+  definition: Used to solicit proposals for projects. For renewable energy projects, they are typically up to specified
+    capacity targets. RFPs may specify stringent requirements which must be met by the developer.
+- id: reservelands
+  term: Reserve lands
+  definition: A reserve is a parcel of land where legal title is held by the Crown (Government of Canada), for the
+    use and benefit of a particular First Nation.
+- id: reservemargin
+  term: Reserve margin
+  definition: Reserve margin, or reserve capacity, is a measure of available capacity over and above the capacity
+    needed to meet peak demand.
+- id: reserves
+  term: Reserves
+  definition: 'Reserves are the remaining marketable quantities of oil and natural gas expected to be recoverable
+    from known accumulations as based on: analyses of drilling, geological, geophysical, and engineering data; and
+    the use of established technologies in foreseeable economic conditions.'
+- id: reserves-proven
+  term: Reserves – Proven
+  definition: Proved reserves are those reserves expected to be recoverable with a high degree of certainty. It
+    is likely that the actual remaining quantities recovered will exceed the proved reserves.
+- id: residentialsector
+  term: Residential sector
+  definition: This sector includes Canadian households.
+- id: residualoil
+  term: Residual oil
+  definition: Oil remains that are left over after the removal of valuable distillates during the refinement process.
+- id: resourcesoilandnaturalgas
+  term: Resources (oil and natural gas)
+  definition: The remaining total volume of recoverable oil and natural gas thought to exist. Resources include
+    deposits not economic to extract at current oil and gas prices, but may become economic as prices rise. Resources
+    also include an undiscovered component, which may have been bypassed in current wells or have yet to be found.
+    Resources can also include an additional amount of oil and gas that may be recovered as technology improves
+    beyond current capabilities.
+- id: resources-marketable
+  term: Resources – Marketable
+  definition: The volume of oil or natural gas recoverable under foreseeable economic and technological conditions
+    and in condition to be used by the market.
+- id: resourcesultimatepotential
+  term: Resources – Ultimate potential
+  definition: An estimate of all the resources that may become recoverable or marketable when considering geological
+    prospects and anticipated technology.
+- id: returnonratebase
+  term: Return on Rate base
+  definition: The return which a regulated company earns on its approved rate base.
+- id: revenuerequirement
+  term: Revenue requirement
+  definition: The total cost of providing service, including operating and maintenance expenses, depreciation, amortization,
+    taxes, and return on rate base. See Cost of service.
+- id: revenuesupportpolicies
+  term: Revenue support policies (Renewables)
+  definition: Policies which increase projects’ revenue or provide revenue certainty, often through long-term contracts.
+    Long-term contracts or Power Purchase Agreements (PPAs) are a method of support and they underpin the construction
+    of most renewable projects in Canada. Contracts can be awarded through different mechanisms which vary in terms
+    of objectives, level of support and overall design. See Requests for proposals, Feed-in tariffs, Standard offer
+    programs or Net-metering.
+- id: roeformulaorrh-2-94formula
+  term: ROE formula or RH-2-94 formula
+  definition: Formula to establish the rate of return on common equity for certain CER-regulated pipelines, established
+    in the RH-2-94 Proceeding, as amended to eliminate rounding.
+- id: rolledintolls
+  term: Rolled-in tolls
+  definition: Tolls resulting from a toll design methodology in which the capital and operating costs of new facilities
+    are added to those of the existing facilities; i.e. there is one cost pool for all facilities. Tolls are designed
+    to recover the annual cost of providing service. All shippers who receive the same service pay the same toll.
+    Tolls only vary according to such factors as volumes and distance.
+- id: secondaryenergyuse
+  term: Secondary energy use
+  definition: Energy used by final consumers for residential, agricultural, commercial, industrial and transportation
+    purposes. It excludes the energy used to generate electricity, which is included under primary demand. See Primary
+    energy demand.
+- id: sectorcoupling
+  term: Sector coupling
+  definition: Refers to the idea of integrating multiple energy consuming sectors and end uses with a low carbon
+    electrical grid.
+- id: servicewells
+  term: Service wells
+  definition: Wells drilled to support oil and gas activity that do not produce oil or gas themselves.
+- id: shalegas
+  term: Shale gas
+  definition: A form of unconventional gas trapped within shale; a sedimentary rock originally deposited as clay
+    and dead plankton, characterized by extremely low permeability. The majority of gas is found as free gas in
+    the shale’s pore spaces or as adsorbed gas, stuck to the shale’s organic material.
+- id: shaleoil
+  term: Shale oil
+  definition: A form of unconventional oil trapped within shale; a sedimentary rock originally deposited as clay
+    and dead plankton, characterized by extremely low permeability.
+- id: shareholdersequity
+  term: Shareholder’s equity
+  definition: A company’s owners’ residual claim on assets after debts have been paid. Equity is equal to a company’s
+    total assets minus total liabilities. A positive shareholders’ equity indicates the company has enough assets
+    to cover its liabilities. If negative, the company’s liabilities exceed its assets, and if prolonged, is considered
+    at risk for insolvency.
+- id: shallowcutfacilities
+  term: Shallow-cut facilities
+  definition: A gas plant next to, or within, gas field plants or gas pipelines that can extract propane or heavier
+    natural gas liquids (butanes and condensate) using refrigeration technologies.
+- id: sinkingfund
+  term: Sinking fund
+  definition: The money that must be regularly set aside according to the terms of a long-term debt or preferred
+    share issue, in order to redeem part of the issue prior to or at maturity.
+- id: mallmodularreactorsmr
+  term: Small modular reactor (SMR)
+  definition: Nuclear power plants that have been scaled down in size and capacity.
+- id: socketparity
+  term: Socket parity
+  definition: Occurs when an alternative energy source such as solar can generate electricity at a cost that is
+    less than, or equal to, the cost of purchasing power from the grid. See Grid parity.
+- id: solarenergy
+  term: Solar energy
+  definition: Includes active and passive solar heat collection systems and photovoltaics.
+- id: solutiongasassociatedgas
+  term: Solution gas (associated gas)
+  definition: Natural gas produced along with oil from oil wells.
+- id: spotprice
+  term: Spot price
+  definition: The current market price of natural gas for next day delivery.
+- id: springbreakup
+  term: Spring breakup
+  definition: Drilling activity in western Canada drops sharply during the spring when the ground melts and provinces
+    enforce road bans, making it difficult for rigs to get into the field.
+- id: standardofferprograms
+  term: Standard offer programs (SOPs) (Renewables)
+  definition: Offer long-term contracts with fixed standard rates agreed upon at the start of the program. SOPs
+    typically offer the same rates for all renewable energy technologies.
+- id: standalonetolls
+  term: Stand-alone tolls
+  definition: Tolls that would be paid by only those shippers utilizing specific facilities or assets that are physically
+    distinguishable from the existing facilities. They would be based on a revenue requirement independent of that
+    calculated for the rest of the system. See Incremental tolls and Rolled-in tolls.
+- id: steamassistedgravitydrainage
+  term: Steam assisted gravity drainage (SAGD)
+  definition: SAGD uses pairs of horizontal wells to produce bitumen in the oil sands. Steam is injected into an
+    upper well to heat the bitumen, which then drains by gravity into a lower well and is pumped to the surface.
+- id: steamoilratio
+  term: Steam oil ratio (SOR)
+  definition: The volume of steam required to produce one unit of oil.
+- id: straddleplant
+  term: Straddle plant
+  definition: A reprocessing plant located on a gas pipeline. It extracts remaining natural gas liquids from previously
+    processed gas.
+- id: straightfixedvariabletolldesign
+  term: Straight fixed variable (SFV) toll design
+  definition: A toll design whereby all fixed costs are assigned to the demand toll and all variable costs are assigned
+    to the commodity toll. See Modified fixed variable toll design.
+- id: strandedasset
+  term: Stranded asset
+  definition: An asset that is not fully depreciated but no longer useful and the regulated owner is no longer able
+    to recover its capital investment.
+- id: structuralrail
+  term: Structural rail
+  definition: Crude oil that is likely to be exported by rail regardless of a given WCS-WTI differential. It may
+    exist to connect supply and demand sources not connected by a pipeline, for example.
+- id: subbituminous
+  term: Sub-bituminous
+  definition: A coal whose properties range from those of lignite to those of bituminous coal. Used primarily as
+    fuel for steam-electric power generation. It has a lower heat content than lignite or bituminous coal.
+- id: supplycost
+  term: Supply cost
+  definition: The estimated cost at which a unit of energy can be produced over a project’s economic life. It includes
+    capital costs associated with exploration, development, and production, as well as operating costs, taxes, royalties
+    and producer rate of return.
+- id: supplyrisk
+  term: Supply risk
+  definition: The risk that the physical availability of supply could affect a pipeline’s income-earning capability.
+- id: syntheticcrudeoil
+  term: Synthetic crude oil
+  definition: Synthetic crude oil is made by upgrading crude bitumen, or diluting heavy crude oil into a lighter
+    blend. See Upgrading (bitumen).
+- id: takeorpay
+  term: Take-or-pay
+  definition: In a take-or-pay contract, the pipeline shipper makes a contractual commitment to pay for a certain
+    amount of pipeline transportation service, even if they do not use it. This creates a strong financial incentive
+    for the shipper to use the pipeline and gives the pipeline company greater certainty.
+- id: tariff
+  term: Tariff
+  definition: The terms and conditions under which the service of a pipeline are offered or provided, including
+    the tolls, the rules and regulations, and the practices relating to specific services.
+- id: terminalling
+  term: Terminalling
+  definition: The receiving, storing, and transferring necessary for the receipt or delivery of oil in a pipeline
+    system.
+- id: testyearortestperiod
+  term: Test year or Test period
+  definition: The 12-month operating period selected to evaluate the cost of service and the adequacy of the tolls
+    in effect or being sought.
+- id: thermalcoal
+  term: Thermal coal
+  definition: Lignite, Sub-bituminous, or lower-grade Bituminous coal primarily used for power generation or heating
+    purposes.
+- id: throughput
+  term: Throughput
+  definition: The amount of product moved through a pipeline.
+- id: tidalpower
+  term: Tidal power
+  definition: Is a subset of ocean energy. Most of the present activities and discussions on ocean energy around
+    the world are related to harnessing power from tides, tidal currents and waves.
+- id: tightgas
+  term: Tight gas
+  definition: Gas produced from organic-rich shales or from low permeability sandstone, siltstone, limestone or
+    dolostone reservoirs. Tight gas reservoirs typically require the combination of horizontal drilling and multi-stage
+    hydraulic fracturing to achieve economic rates of production.
+- id: tightoil
+  term: Tight oil
+  definition: Oil produced from organic-rich shales or from low permeability sandstone, siltstone, limestone or
+    dolostone reservoirs. Tight oil reservoirs typically require the combination of horizontal drilling and multi-stage
+    hydraulic fracturing to achieve economic rates of production.
+- id: timeofusepricing
+  term: Time-of-use pricing
+  definition: Introduces different pricing levels depending on when it is used. Higher prices are charged at peak
+    periods to encourage consumers to shift usage to lower demand hours.
+- id: toll
+  term: Toll
+  definition: The price charged by a pipeline company for transportation and other services.
+- id: tolllevelling
+  term: Toll levelling
+  definition: Ratemaking techniques used to defer costs traditionally recovered through tolls in the early years
+    of a pipeline’s life, to later years in order to level out tolls over time. Can also refer to the shifting of
+    tolls within a shorter time period, for example, to gradually phase in a significant toll increase. See Intergenerational
+    inequity.
+- id: toppingrefineries
+  term: Topping refineries
+  definition: Include only crude distillation plus basic support operations (tankage, recovery facilities for gases
+    and light hydrocarbons, water treatment, power and steam). These refineries can only separate crude oil into
+    various products by boiling point, and have no capability to alter the natural yield from this process. It is
+    the simplest refinery configuration.
+- id: traffic
+  term: Traffic
+  definition: The commodity being transported and the activity of transportation and other associated dealings with
+    that commodity.
+- id: transmissionpipelines
+  term: Transmission pipelines
+  definition: A system of relatively large diameter pipes that deliver products over long distances, usually from
+    sources of supply, to different markets.
+- id: transportationsector
+  term: Transportation sector
+  definition: This sector includes passenger and freight on-road transportation, as well as air, rail, marine, and
+    non-industrial off-road travel, such as recreational all-terrain vehicles and snowmobiles.
+- id: trunklines
+  term: Trunk lines
+  definition: The main transportation lines of a pipeline system. See Laterals.
+- id: unabatedfossilfuels
+  term: Unabated fossil fuels
+  definition: Fossil fuel combustion without the application of carbon capture and storage technology.
+- id: unconventionalnaturalgas
+  term: Unconventional natural gas
+  definition: 'Natural gas that can be produced at commercial rates only after the extensive use of technology.
+    It may be that the gas is held by the matrix material such as coal, ice, or shale; or where the reservoir has
+    an unusually low amount of porosity and permeability. Examples of are: coalbed methane, shale gas and gas hydrates.
+    For comparison, see Conventional natural gas.'
+- id: uniformaccountregulations
+  term: Uniform Account Regulations (UAR)
+  definition: The accounting regulations for companies under the CER’s jurisdiction. There are separate Uniform
+    Accounting Regulations for gas and oil pipelines.
+- id: upgradingbitumen
+  term: Upgrading (Bitumen)
+  definition: Higher quality crude oil that is derived from bitumen that has had carbon removed (Coking) or hydrogen
+    added (Hydroprocessing).
+- id: utilityscalesolar
+  term: Utility-scale (solar)
+  definition: Large-scale solar electricity generation systems that are connected to an electricity grid. They inject
+    the electricity they generate directly into the electric grid.
+- id: utilizationrate
+  term: Utilization rate
+  definition: System throughput divided by pipeline design capacity.
+- id: vacuumdistillation
+  term: Vacuum distillation
+  definition: The process of further distilling the heavy products (long residue) left over from atmospheric distillation.
+    Vacuum distillation occurs at a very low pressure, reducing the boiling temperature for heavy compounds. Products
+    from vacuum distillation (vacuum gas oil and residual or resid) are further processed by other refinery units.
+    Residual is used at refineries for asphalt or heavy fuel oil production or as feedstock for coking units.
+- id: variablecosts
+  term: Variable costs
+  definition: Costs that vary with throughput, such as compressor fuel costs for gas pipelines and power costs for
+    oil pipelines. See Fixed costs.
+- id: variablecostofservicetoll
+  term: Variable cost-of-service Toll
+  definition: A toll which varies from month to month to reflect actual costs and throughput. Rules prescribed by
+    the regulator specify which costs can be recovered, the accounting principles to be followed in determining
+    the costs, the rate of return allowed on the investment in rate base, depreciation rates, and other parameters.
+    See Fixed toll.
+- id: variablerail
+  term: Variable rail
+  definition: Crude oil exports shipped by rail that are supported by the WTI-WCS differential, and in response
+    to potential pipeline constraints.
+- id: variablerenewableelectricityvre
+  term: Variable renewable electricity (VRE)
+  definition: Renewable energy sources that are non-dispatchable due to their methods of energy production, as opposed
+    to a controllable renewable energy source such as dammed hydroelectricity. Wind and solar power are examples
+    of VRE.
+- id: viscosityreduction
+  term: Viscosity reduction
+  definition: A refinery process that reduces the viscosity of a residual or heavy crude oil. Viscosity reduction
+    is achieved either by partially cracking the residual in a furnace (visbreaking) or by adding a diluent (light
+    oil, naphtha, kerosene or other distillates).
+- id: voltageregulation
+  term: Voltage regulation
+  definition: The ability of an electrical system to provide near constant voltage over a range of load conditions,
+    necessary to support the transmission of electric power from generators to consumers.
+- id: wasteheat
+  term: Waste heat
+  definition: Energy lost during the operation of a piece of equipment or machinery. Various processes, such as
+    cogeneration or combined heat and power (CHP) exist to capture and reuse waste heat.
+- id: westtexasintermediate
+  term: West Texas Intermediate (WTI)
+  definition: A key North American benchmark crude oil price, it’s a light sweet grade of crude oil produced in
+    western Texas with an API gravity of 40 degrees. It is priced at Cushing, Oklahoma and is the deliverable grade
+    for the New York Mercantile Exchange’s oil futures contract.
+- id: westerncanadasedimentarybasin
+  term: Western Canada Sedimentary Basin (WCSB)
+  definition: The Western Canada Sedimentary Basin (WCSB) is an ancient sedimentary basin 1.4 million square kilometres
+    in size that formed over southwest Manitoba, southern Saskatchewan, almost all of Alberta, eastern and northeastern
+    British Columbia, and the southern Yukon and Northwest Territories. It is the major oil and gas producing region
+    of Canada.
+- id: westerncanadianselect
+  term: Western Canadian Select (WCS)
+  definition: A blend of Canadian heavy and bitumen sour crude oils mixed with sweet synthetic and condensates with
+    an API gravity of about 21 degrees. It is priced at Hardisty, Alberta and is often used as a representative
+    price for Canadian heavy crude oils.
+- id: windpower
+  term: Wind power
+  definition: From wind turbines rather than old-fashioned wind mills. Horizontal axis wind turbines are the most
+    common type. As the wind passes the turbines it moves the propeller or fan-style blades. This spins the shaft
+    which is connected to a generator.
+- id: workingcapital
+  term: Working capital
+  definition: For regulatory purposes, capital employed by the utility to finance its ongoing operations, in addition
+    to the investment in Plant in service. An allowance for working capital is included in the rate base and consists
+    of items such as cash working capital and materials and supplies inventory.
+- id: writeoff
+  term: Write off
+  definition: The elimination of the recorded amount of an asset or liability for reasons other than the occurrence
+    of a transaction.
+- id: wtiwcsdifferential
+  term: WTI-WCS Differential
+  definition: The WTI-WCS differential is the price difference between sweet, light crude oil priced at the Cushing,
+    Oklahoma, price hub (WTI) and heavy blends priced at Hardisty, Alberta (WCS). It reflects a quality difference
+    between the heavy-sour WCS and the light-sweet WTI as well as the cost of transportation. Changes in the WTI-WCS
+    differential can arise for a number of reasons including relative changes in refinery demand for heavy crude
+    or a change in the cost of transportation between the two markets.
+- id: zeroemissionsvehicle
+  term: Zero-emissions vehicle
+  definition: A vehicle that has the potential to produce no tailpipe emissions, including battery electric and
+    plug-in hybrid electric vehicles.
+- id: '>13pointaverageor13monthaverage'
+  term: 13-Point Average or 13-Month Average
+  definition: An average determined by aggregating the balance at the opening of a year and the balances at the
+    end of each month of the year and dividing by 13.

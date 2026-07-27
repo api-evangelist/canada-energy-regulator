@@ -1,0 +1,108 @@
+generated: '2026-07-27'
+method: searched
+source: live probes of the CER ArcGIS, Federal Geospatial Platform and Open Government Portal surfaces, 2026-07-27
+note: 'The Canada Energy Regulator publishes no API style guide, because it publishes no API of its own design. Its
+  machine-readable surfaces inherit the conventions of three upstream products: Esri ArcGIS REST, OGC WMS 1.3.0 and
+  CKAN Action API v3. Everything below was observed on the wire rather than read off a docs page, and the conventions
+  differ per surface — there is no cross-surface consistency to document.'
+authentication:
+  style: none (anonymous)
+  artifact: authentication/canada-energy-regulator-authentication.yml
+idempotency:
+  supported: false
+  note: 'No idempotency contract exists and none is needed: every surface is read-only. There is no write operation,
+    no Idempotency-Key header and no request-replay semantics anywhere in the estate. No Idempotency pointer is emitted.'
+content_negotiation:
+  style: query parameter, not Accept header
+  note: ArcGIS REST selects representation with f= (json, geojson, pjson, html); WMS uses request=/service=/version=;
+    CKAN always returns application/json.
+  arcgis_f_values:
+  - json
+  - geojson
+  - pjson
+  - html
+pagination:
+- surface: ArcGIS REST /query
+  style: offset
+  params:
+  - resultOffset
+  - resultRecordCount
+  response_fields:
+  - exceededTransferLimit
+  page_ceiling: maxRecordCount per layer — 1000 on 6 of the 25 CER layers, 2000 on the other 19
+  note: A layer will silently truncate at maxRecordCount and set exceededTransferLimit true. AER_Regulated_Pipelines
+    holds 315,089 features against a 2,000-record ceiling, so it cannot be pulled in one call — paging through resultOffset
+    is mandatory, and returnCountOnly=true is the way to size the job first.
+- surface: CKAN Action API
+  style: offset
+  params:
+  - rows
+  - start
+  response_fields:
+  - count
+  note: package_search defaults to 20 rows; rows=100 returned all 83 CER datasets in one call on 2026-07-27.
+- surface: OGC WMS
+  style: not applicable
+  note: WMS is a tiled/BBOX image and feature-info protocol, not a paged collection API.
+filtering:
+- surface: ArcGIS REST /query
+  params:
+  - where
+  - geometry
+  - geometryType
+  - spatialRel
+  - outFields
+  - returnGeometry
+  - returnCountOnly
+  - orderByFields
+  note: where takes SQL-92 predicates; where=1=1 is the idiomatic match-all. An invalid predicate returns an error
+    envelope under HTTP 200.
+- surface: CKAN Action API
+  params:
+  - q
+  - fq
+  - sort
+  - rows
+  - start
+  note: Solr syntax. fq=owner_org:A3EE9522-882F-47B0-BA7D-83420DC8577C is the filter that isolates the CER from every
+    other federal department on the shared portal.
+error_envelope:
+  artifact: errors/canada-energy-regulator-problem-types.yml
+  rfc9457: false
+  note: Three different envelopes and two of them lie about the HTTP status. ArcGIS returns {"error":{"code","message","details"}}
+    under HTTP 200. www.cer-rec.gc.ca returns a 4,405-byte HTML error page under HTTP 200 for every unknown path.
+    CKAN is the only surface that sets a truthful status code. Status-code-only error handling will not work against
+    this provider.
+rate_limiting:
+  documented: false
+  headers_observed: []
+  note: No rate-limit policy is published and no RateLimit/X-RateLimit/Retry-After header was observed on any surface.
+    The practical ceilings are transfer limits (ArcGIS maxRecordCount), not request budgets.
+request_tracing:
+  request_id_header: null
+  note: No request-id or correlation header observed on any surface.
+versioning:
+  artifact: lifecycle/canada-energy-regulator-lifecycle.yml
+  note: 'Version is per upstream product: ArcGIS Online currentVersion 12, FGP ArcGIS Server 10.81, CKAN Action API
+    v3 in the URI path, WMS 1.3.0 as a required query parameter.'
+bilingualism:
+  required: true
+  note: The Official Languages Act shows up in the data contract itself. Field pairs are suffixed _en/_fr or _FRA
+    (name_en/name_fr, Pipeline_Name/Pipeline_Name_FRA, feature_name/feature_name_fr), and the incident layer is published
+    twice as separate services with translated FIELD NAMES — Incident_Data_French uses Numéro_d_i, Société, État.
+    A client cannot switch language by parameter; it must switch service and remap every field.
+licensing:
+  name: Open Government Licence - Canada
+  id: ca-ogl-lgo
+  url: https://open.canada.ca/en/open-government-licence-canada
+  note: All 83 CER datasets carry ca-ogl-lgo — verified across every package on 2026-07-27. Attribution required;
+    no agreement to execute.
+client_gotchas:
+- open.canada.ca requires a browser-like User-Agent or its WAF returns an HTML "Request Rejected" body under HTTP
+  200.
+- ArcGIS errors arrive under HTTP 200 — parse the body, never branch on status alone.
+- 'www.cer-rec.gc.ca soft-404s: every unknown path returns HTTP 200 with the same 4,405-byte HTML page.'
+- Only 1 of 944 CKAN resources is loaded into the datastore, so datastore_search is effectively unavailable; the real
+  pattern is metadata over the API then bulk CSV download.
+- ArcGIS field names are truncated to 10 characters in several layers (Incident_N, Reported_D, What_Happe) — a shapefile-era
+  artefact preserved in the JSON contract.
