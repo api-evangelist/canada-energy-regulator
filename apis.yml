@@ -1,0 +1,157 @@
+aid: canada-energy-regulator
+url: https://raw.githubusercontent.com/api-evangelist/canada-energy-regulator/refs/heads/main/apis.yml
+name: Canada Energy Regulator
+kind: company
+description: >-
+  The Canada Energy Regulator (CER / Régie de l'énergie du Canada) is Canada's federal energy regulator,
+  created by the Canadian Energy Regulator Act in 2019 to replace the National Energy Board. Its remit is
+  the interprovincial and international layer of the energy system: pipelines and power lines that cross a
+  provincial or national border, imports and exports of oil, natural gas, NGLs, LNG and electricity, oil
+  and gas activity on frontier and offshore lands, and offshore renewable energy projects. It does not
+  regulate the distribution utilities that meter and bill Canadian households — electricity and gas
+  distribution is provincial, which is why the only consumer energy data mandate in the country, Ontario's
+  Green Button regulation O. Reg. 633/21, is administered by the Ontario Energy Board and not by the CER.
+  The CER's API posture is the cleanest possible statement of that split: it is genuinely open on market
+  and system data and entirely absent on consumer data. It publishes 83 datasets and 944 resources on the
+  Government of Canada Open Government Portal, every one of them under the Open Government Licence –
+  Canada, 894 of them CSV files served anonymously from its own www.cer-rec.gc.ca/open/ tree, all of it
+  queryable without a key through the portal's CKAN Action API. It operates its own ArcGIS Online
+  organization whose 23 hosted feature services — pipeline systems, incidents, provincial pipeline status,
+  resource areas, refineries — answered anonymous ArcGIS REST queries on 2026-07-27, and it publishes an
+  Environmental and Socio-economic Assessments layer through the Federal Geospatial Platform as both an
+  Esri ArcGIS REST MapServer and an OGC WMS 1.3.0 service. It also open-sources the front ends for its own
+  visualizations on GitHub. What it does not have is a developer portal, an OpenAPI definition, an API key,
+  a rate-limit policy, or a single machine-readable path to an individual customer's usage or billing data.
+  No mandate obliges it to have one. Home market Canada.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/groq.png
+tags:
+- Energy
+- Canada
+- Regulation
+- Government
+- Pipelines
+- Electricity
+- Natural Gas
+- Crude Oil
+- Energy Markets
+- Open Data
+- Geospatial
+created: '2026-07-27'
+modified: '2026-07-27'
+specificationVersion: '0.19'
+apis:
+- aid: canada-energy-regulator:cer-arcgis-feature-services
+  name: CER ArcGIS Online Feature Services
+  description: >-
+    The Canada Energy Regulator operates its own ArcGIS Online organization (portal
+    neb-gis.maps.arcgis.com, organization id vNzamREXvX2WcX6d) and hosts 23 public feature services on
+    it. This is the one genuinely CER-operated machine-readable API surface found in this review. The
+    services directory, every FeatureServer descriptor and the /query operation all answered anonymous
+    HTTPS requests on 2026-07-27 with no key, no signup and no terms click-through. Layers include
+    CER_Pipeline_Systems_WGS84_view, Incident_Data_English_20191007_View (1,899 features confirmed by
+    a returnCountOnly query), Prov_Pipe_Status (43 features), Prov_Pipe_Type, Oil_and_Gas_Resource_Area,
+    Refinery, Western_Canada_Sedimentary_Basin, Pipelines_Profile_Links_EN_view and both English and
+    French incident layers. The contract is Esri's ArcGIS REST API, not OpenAPI; no OpenAPI, Swagger or
+    /api-docs document is published for it. This service backs the public CER Interactive Pipeline Map.
+  humanURL: https://www.cer-rec.gc.ca/en/safety-environment/industry-performance/interactive-pipeline/index.html
+  baseURL: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services
+  tags:
+  - Geospatial
+  - Pipelines
+  - Incidents
+  - Open Data
+  - ArcGIS
+  properties:
+  - type: APIReference
+    url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services?f=json
+  - type: Documentation
+    url: https://www.cer-rec.gc.ca/en/safety-environment/industry-performance/interactive-pipeline/index.html
+  - type: Documentation
+    url: https://neb-gis.maps.arcgis.com/apps/webappviewer/index.html?id=2d11fd4e6a7a4f4ba7fe6bdf51ae52de
+  - type: Website
+    url: https://neb-gis.maps.arcgis.com/
+- aid: canada-energy-regulator:cer-assessments-map-service
+  name: CER Assessments Map Service (Federal Geospatial Platform)
+  description: >-
+    The CER's Environmental and Socio-economic Assessments (ESA) layer, published through the Government
+    of Canada's Federal Geospatial Platform at maps-cartes.services.geo.ca under the NRCan folder and
+    served in English and French. Two protocols are exposed for the same data and both answered
+    anonymously on 2026-07-27: an Esri ArcGIS REST MapServer (?f=json returned a service description
+    naming the CER as the data owner) and an OGC WMS 1.3.0 endpoint whose GetCapabilities document
+    parsed as valid XML. This is CER data on federal shared infrastructure rather than a CER-operated
+    host, and it is the only place in this review where an open, vendor-neutral international standard
+    (OGC WMS) is used.
+  humanURL: https://open.canada.ca/data/en/dataset/039fbd92-43c2-4805-b210-d65703712e37
+  baseURL: https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/CER_Assessments_EN/MapServer
+  tags:
+  - Geospatial
+  - Assessments
+  - WMS
+  - OGC
+  - Open Data
+  properties:
+  - type: APIReference
+    url: https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/CER_Assessments_EN/MapServer?f=json
+  - type: Documentation
+    url: https://maps-cartes.services.geo.ca/server_serveur/services/NRCan/CER_Assessments_EN/MapServer/WMSServer?request=GetCapabilities&service=WMS&version=1.3.0
+  - type: Documentation
+    url: https://open.canada.ca/data/en/dataset/039fbd92-43c2-4805-b210-d65703712e37
+- aid: canada-energy-regulator:cer-open-data-ckan
+  name: CER Open Data via the Open Government Portal CKAN API
+  description: >-
+    The Canada Energy Regulator publishes no API of its own for tabular data, but all of its open data is
+    machine-readable through the Government of Canada Open Government Portal's CKAN Action API, which is
+    operated by the Treasury Board of Canada Secretariat and not by the CER. Filtering that API to the
+    CER's organization id A3EE9522-882F-47B0-BA7D-83420DC8577C returned 83 datasets carrying 944
+    resources on 2026-07-27 — 894 CSV, 36 HTML, 8 PDF, 2 XLSX, 2 Esri REST and 2 WMS — every one licensed
+    under the Open Government Licence – Canada. Coverage is the CER's regulatory and market record:
+    crude oil, natural gas, NGL, LNG and electricity imports and exports, pipeline throughput, capacity
+    and tolls, pipeline financial information, incidents, conditions, compliance and enforcement, the
+    regulated company list, frontier production statistics and the Canada's Energy Future projection
+    series. Only one of the 944 resources is loaded into the CKAN datastore, so datastore_search row-level
+    querying is effectively unavailable; the real access pattern is metadata over the API and then bulk
+    CSV download from https://www.cer-rec.gc.ca/open/, which was confirmed serving a 10,110-byte LNG
+    exports file anonymously.
+  humanURL: https://open.canada.ca/data/en/organization/cer-rec
+  baseURL: https://open.canada.ca/data/api/3/action
+  tags:
+  - Open Data
+  - CKAN
+  - Energy Markets
+  - Imports and Exports
+  - Statistics
+  properties:
+  - type: APIReference
+    url: https://open.canada.ca/data/api/3/action/help_show?name=package_search
+  - type: Documentation
+    url: https://open.canada.ca/data/en/organization/cer-rec
+  - type: Documentation
+    url: https://www.cer-rec.gc.ca/en/about/open-government/
+  - type: Documentation
+    url: https://www.cer-rec.gc.ca/en/data-analysis/
+common:
+- type: Website
+  url: https://www.cer-rec.gc.ca/en/
+- type: Documentation
+  url: https://www.cer-rec.gc.ca/en/data-analysis/
+- type: Documentation
+  url: https://www.cer-rec.gc.ca/en/about/open-government/
+- type: Documentation
+  url: https://www.cer-rec.gc.ca/en/data-visualization/
+- type: APIReference
+  url: https://open.canada.ca/data/api/3/action/help_show?name=package_search
+- type: GitHubOrganization
+  url: https://github.com/CER-REC
+- type: GitHubRepository
+  url: https://github.com/CER-REC/pipeline-profiles
+- type: GitHubRepository
+  url: https://github.com/CER-REC/conditions
+- type: GitHubRepository
+  url: https://github.com/CER-REC/incidents-pipeliniers_pipeline-incidents
+- type: TermsOfService
+  url: https://www.cer-rec.gc.ca/en/terms-conditions.html
+- type: Support
+  url: https://www.cer-rec.gc.ca/en/about/contact/index.html
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

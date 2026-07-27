@@ -1,0 +1,441 @@
+aid: canada-energy-regulator
+name: Canada Energy Regulator
+review:
+  question: >-
+    Does Canada's federal energy regulator carry a consumer energy data mandate, and does it publish
+    machine-readable APIs — or is the only Canadian energy data mandate somewhere else entirely?
+  answer: >-
+    No mandate, real open data. The Canada Energy Regulator carries no consumer data obligation of any
+    kind, because it does not regulate the utilities that meter and bill Canadian households — that is
+    provincial. Canada's only energy consumer data mandate is Ontario's Green Button regulation
+    O. Reg. 633/21, administered by the Ontario Energy Board, and the CER has no role in it. What the CER
+    does have is a genuinely open, anonymous, licence-clean market and system data surface: 83 datasets
+    and 944 resources on the federal Open Government Portal, 23 publicly queryable ArcGIS Online feature
+    services it operates itself, and an OGC WMS 1.3.0 layer on the Federal Geospatial Platform. It has no
+    developer portal, no OpenAPI, no API key and no consumer data path.
+  date: '2026-07-27'
+  reviewer: API Evangelist
+  tier: regulator
+  homeMarket: Canada
+
+mandate:
+  regime: none
+  status: not-applicable
+  verbatimFinding: >-
+    No mandate regime applies to the Canada Energy Regulator. It is not a Consumer Data Right
+    jurisdiction (that is Australia). It is not covered by Ontario's Green Button regulation (that is a
+    provincial instrument binding rate-regulated Ontario electricity and natural gas utilities, overseen
+    by the Ontario Energy Board). It is not a Green Button voluntary adopter — no reference to Green
+    Button, ESPI or NAESB REQ.21 was found anywhere on cer-rec.gc.ca in this review. It is not a smart
+    meter infrastructure body — Canada has no DCC equivalent, and metering is provincial. Canada has a
+    federal consumer data framework in progress for banking (the Consumer-Driven Banking Framework);
+    there is no federal energy analogue, designated or otherwise.
+  whyNotApplicable: >-
+    The Canadian Energy Regulator Act gives the CER jurisdiction over interprovincial and international
+    pipelines and power lines, imports and exports of oil, gas, NGLs, LNG and electricity, frontier and
+    offshore oil and gas, and offshore renewable energy projects. Electricity and natural gas
+    distribution — the layer that owns the customer meter, the billing relationship and therefore the
+    consumer data — is a provincial head of power. A consumer energy data mandate in Canada can only be
+    made by a province, and exactly one province has made one.
+  theCanadianContrastForTheRecord:
+    - jurisdiction: Ontario
+      instrument: >-
+        O. Reg. 633/21 (Energy Data for Electricity and Natural Gas Utilities), made under the Ontario
+        Energy Board Act; rate-regulated electricity and natural gas utilities were required to offer
+        Green Button by 1 November 2023, implementing Download My Data and Connect My Data conformant to
+        NAESB REQ.21 ESPI. Overseen by the Ontario Energy Board, with exemptions for utilities lacking
+        smart metering or technical capability.
+      administeredBy: Ontario Energy Board
+      relationshipToCer: None. The CER is not a party to this regulation and does not administer it.
+      evidenceQuality: >-
+        Established from web search returning the OEB's own Green Button page, greenbuttonontario.ca, the
+        Green Button Alliance press release and Ontario ERO notice 019-2564. The regulation text itself
+        was NOT fetched in this session and no Ontario utility endpoint was probed here — that belongs to
+        the Ontario utility profiles, not to this federal regulator.
+    - jurisdiction: Rest of Canada
+      instrument: None found.
+      note: >-
+        No other province was found to have made Green Button or any equivalent consumer energy data
+        right mandatory. Most Canadian utilities outside Ontario are provincial Crown corporations, and
+        no federal instrument reaches them.
+  federalRoleOfThisOrganization: >-
+    The CER's obligations run in the opposite direction from a consumer data right: it requires the
+    companies it regulates to file with it, and it then republishes much of that filed record as open
+    data. Its regulatory reporting surfaces (REGDOCS at apps.cer-rec.gc.ca/REGDOCS, the Event Reporting
+    System at apps.cer-rec.gc.ca/ERS, the online application filing route) are inbound filing systems for
+    regulated companies, not outbound data APIs, and none of them documents an API.
+  publicRegisterOfRegulatedParties:
+    exists: true
+    form: >-
+      Not an API register in the CDR sense. The CER publishes a "Regulated Company List" dataset and an
+      "International Power Line Company List" dataset on the Open Government Portal as CSV, plus
+      compliance and enforcement, non-compliance and condition datasets. Machine-readable, but a
+      published file rather than a queryable register endpoint.
+    datasets:
+      - Regulated Company List (open.canada.ca dataset c1bb15bd-0b4d-484c-a813-857b167d8d00)
+      - International Power Line Company List (0a4380c9-0b86-4d4c-b241-13e7da010c3f)
+      - Compliance Activities (1462ab8d-ce91-49ab-8202-406877061267)
+      - Non-Compliances (6c716550-77af-446c-a30e-e5ad7edda9e2)
+      - Conditions (e8402029-2543-4300-bf6a-81a788a08f70)
+  claimVsImplementation: >-
+    There is nothing to disambiguate here, and that is worth stating plainly. The CER makes no compliance
+    claim about any data-sharing standard, so there is no press release to mistake for an endpoint. Every
+    machine-readable surface recorded in this file was read off an anonymous HTTP response on 2026-07-27,
+    not off a policy page.
+
+dataStandard:
+  energySectorStandard: none
+  energySectorStandardNote: >-
+    No energy-sector data standard reference was found. No Green Button, no NAESB REQ.21 ESPI, no CDR
+    Consumer Data Standards, no IEC CIM 61968/61970, no IEEE 2030.5, no OpenADR, no OCPP or OCPI. The
+    CER does not exchange consumer, meter or DER data, so none of these apply to it.
+  standardsActuallyPresent:
+    - name: Open Government Licence – Canada
+      identifier: ca-ogl-lgo
+      note: All 83 CER datasets carry this licence, confirmed from CKAN metadata for every package.
+    - name: CKAN Action API v3
+      url: https://open.canada.ca/data/api/3/action
+      note: >-
+        The federal portal's standard API, operated by Treasury Board Secretariat, not by the CER.
+        Verified against the CER's organization id.
+    - name: Esri ArcGIS REST API
+      note: >-
+        Used by both the CER's own ArcGIS Online organization and the Federal Geospatial Platform layer.
+        A vendor API, not an open standard, and no OpenAPI description is published for it.
+    - name: OGC WMS 1.3.0
+      url: https://maps-cartes.services.geo.ca/server_serveur/services/NRCan/CER_Assessments_EN/MapServer/WMSServer?request=GetCapabilities&service=WMS&version=1.3.0
+      httpStatus: 200
+      note: >-
+        The only open, vendor-neutral international standard found in the CER's data estate.
+        GetCapabilities returned valid WMS_Capabilities XML on 2026-07-27.
+    - name: CSV
+      note: 894 of 944 published resources. The dominant CER data format by a wide margin.
+  notFound:
+    - Green Button / ESPI (NAESB REQ.21) — no reference on any CER property.
+    - CDR Consumer Data Standards — not a Canadian instrument.
+    - IEC CIM 61968/61970 — no reference found.
+    - OCPP / OCPI / OpenADR / IEEE 2030.5 — no reference found; outside CER's remit.
+    - OpenAPI / Swagger — no document published on any CER host.
+
+consumerVsMarketData:
+  consumerDataApi: false
+  consumerDataNote: >-
+    There is no route by which a third party can obtain an individual customer's energy usage or billing
+    data from the Canada Energy Regulator, and there could not be. The CER has no customers in the retail
+    sense, holds no meter data, and regulates no distribution utility. Its only account-bearing systems
+    are inbound filing tools for the companies it regulates (REGDOCS, the Event Reporting System, the
+    application submission route), and none of them exposes a documented API. This is a structural zero,
+    not a gap in effort.
+  marketDataOpen: true
+  marketDataNote: >-
+    Yes, and broadly. Confirmed anonymously on 2026-07-27: (1) 83 datasets / 944 resources under the
+    CER's organization on the federal Open Government Portal, all Open Government Licence – Canada,
+    covering crude oil, natural gas, NGL, LNG and electricity imports and exports, pipeline throughput
+    and capacity, tolls, pipeline financial information, incidents, conditions, compliance and
+    enforcement, frontier production, refinery crude runs, estimated provincial crude production, the
+    regulated company list and the full Canada's Energy Future projection series back to 2016;
+    (2) 894 of those resources are bulk CSVs served directly from https://www.cer-rec.gc.ca/open/ with
+    no key — a 10,110-byte LNG exports annual file was downloaded and parsed as CSV;
+    (3) 23 hosted ArcGIS feature services in the CER's own ArcGIS Online organization answering
+    /query anonymously; (4) an ESA layer on the Federal Geospatial Platform in both ArcGIS REST and
+    OGC WMS form.
+  splitFinding: >-
+    The split is total and it is jurisdictional, not editorial. Everything the CER holds is open;
+    nothing the CER holds is about a person. A Canadian who wants their own electricity usage as data
+    must go to their distribution utility, and whether that utility can give it to them in a standard
+    format depends entirely on whether they live in Ontario. The federal regulator is wide open and
+    irrelevant to that question. Compare with Australia, where the same institutional role — a federal
+    regulator — carries the whole consumer data right; the difference is that Canadian electricity is
+    provincial and Australian consumer data policy is federal.
+  regulatorPublishesBetterApisThanTheIndustry:
+    verdict: partly, and for an unusual reason
+    evidence: >-
+      The CER's open data is more complete, better licensed and more reliably machine-readable than most
+      Canadian utilities' public surfaces, and its 23 anonymous ArcGIS feature services are more of an
+      API than many provincial Crown utilities publish at all. But the CER is not out-engineering the
+      industry on the dimension that matters to a consumer-data developer, because it does not compete
+      on that dimension. It has no OpenAPI, no key, no rate limits, no versioning policy and no
+      developer portal — it publishes data, not a platform.
+
+accessGate:
+  gate: self-serve
+  gated: false
+  whatADeveloperMustDo: >-
+    Nothing. There is no signup, no application form, no key, no accreditation, no data licence to sign
+    and no terms click-through on any surface probed. Query
+    https://open.canada.ca/data/api/3/action/package_search?fq=owner_org:A3EE9522-882F-47B0-BA7D-83420DC8577C
+    to enumerate the CER's 83 datasets, follow any resource URL to pull the CSV directly from
+    www.cer-rec.gc.ca/open/, or call
+    https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/{service}/FeatureServer/0/query
+    for the geospatial layers. Everything is covered by the Open Government Licence – Canada, which is
+    an open licence requiring attribution, not an agreement a developer must execute. The one practical
+    obstacle encountered was a WAF: open.canada.ca rejects requests without a browser-like User-Agent
+    with an HTML "Request Rejected" body under an HTTP 200, which will silently break naive clients.
+  noSelfServeSignupFound: true
+  noDeveloperPortal: true
+  gatedSurfacesThatDoExist:
+    - name: REGDOCS
+      url: https://apps.cer-rec.gc.ca/REGDOCS/Home/Index
+      httpStatus: 200
+      note: Public regulatory document search UI. No API documented, no machine-readable interface found.
+    - name: Event Reporting System (ERS)
+      url: https://apps.cer-rec.gc.ca/ERS/
+      httpStatus: 200
+      note: >-
+        Inbound incident reporting for regulated companies. Account-based for filers; no public API.
+        Its output is republished as the open Incidents dataset.
+
+authModel:
+  publicEndpoints:
+    scheme: none
+    note: >-
+      Anonymous HTTPS throughout. No API key, no OAuth, no mTLS, no bearer token was required or offered
+      on any surface probed. ArcGIS REST calls need only ?f=json. CKAN Action API calls need only a
+      browser-like User-Agent to get past the portal WAF.
+  oidcDiscovery:
+    probed: https://www.cer-rec.gc.ca/.well-known/openid-configuration
+    result: >-
+      Soft 404 — HTTP 200 with the standard 4,405-byte CER error page, text/html. No OpenID Connect
+      discovery document is served. Same result on apps.cer-rec.gc.ca and apps2.cer-rec.gc.ca.
+  protectedEndpoints:
+    note: >-
+      None found. The only credentialed systems are the filing tools used by regulated companies, and
+      they present HTML logins, not documented API authentication.
+
+developerPortal:
+  url: ''
+  confirmed: false
+  finding: >-
+    The Canada Energy Regulator publishes no developer portal. Every candidate path returned the same
+    4,405-byte soft-404 HTML page under an HTTP 200 status on www.cer-rec.gc.ca, apps.cer-rec.gc.ca and
+    apps2.cer-rec.gc.ca: /developers, /developer, /docs, /api, /api/v1, /openapi.json, /swagger.json,
+    /api-docs, /.well-known/openid-configuration and /.well-known/security.txt. The candidate
+    subdomains developer., developers., api., data., docs. and open. on cer-rec.gc.ca all failed to
+    resolve or connect (curl returned no HTTP status).
+  closestThingToOne: >-
+    https://open.canada.ca/data/en/organization/cer-rec (HTTP 200) — the CER's organization page on the
+    federal Open Government Portal, which is a real self-serve open data portal with a documented CKAN
+    API. It is operated by Treasury Board Secretariat, not by the CER, so it is not recorded as this
+    organization's developer portal.
+  otherRealDocumentationSurfaces:
+    - url: https://www.cer-rec.gc.ca/en/data-analysis/
+      httpStatus: 200
+      note: The CER's data and analysis hub; links every data product but mentions no API.
+    - url: https://www.cer-rec.gc.ca/en/data-visualization/
+      httpStatus: 200
+      note: Lists the interactive visualizations; no API or source-code links surfaced here.
+    - url: https://www.cer-rec.gc.ca/en/about/open-government/
+      httpStatus: 200
+      note: >-
+        The CER's open government page. Points entirely at open.canada.ca. Confirms the CER has
+        deliberately outsourced its open data distribution to the federal portal.
+
+harvestedArtifacts:
+  openapiHarvested: false
+  specsCount: 0
+  reason: >-
+    No OpenAPI, Swagger, RAML, AsyncAPI or GraphQL schema document is published by the Canada Energy
+    Regulator on any host. Nothing was saved into openapi/ because nothing real existed to save, and no
+    specification was generated — an ArcGIS REST service descriptor and a WMS GetCapabilities document
+    are real machine contracts but they are not OpenAPI, and writing one from them would be fabrication.
+  machineReadableContractsThatDoExist:
+    - url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services?f=json
+      httpStatus: 200
+      bytes: 4075
+      parsed: json
+      content: 23 FeatureServer entries.
+    - url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Incident_Data_English_20191007_View/FeatureServer?f=json
+      httpStatus: 200
+      bytes: 2926
+      parsed: json
+      content: 'currentVersion 12, isView true, maxRecordCount 1000.'
+    - url: https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/CER_Assessments_EN/MapServer?f=json
+      httpStatus: 200
+      bytes: 3005
+      parsed: json
+      content: >-
+        Service description naming the Environmental and Socio-economic Assessments submitted to the
+        Canada Energy Regulator.
+    - url: https://maps-cartes.services.geo.ca/server_serveur/services/NRCan/CER_Assessments_EN/MapServer/WMSServer?request=GetCapabilities&service=WMS&version=1.3.0
+      httpStatus: 200
+      bytes: 7019
+      parsed: xml
+      content: WMS_Capabilities version 1.3.0.
+    - url: https://open.canada.ca/data/api/3/action/organization_show?id=cer-rec
+      httpStatus: 200
+      parsed: json
+      content: >-
+        Organization id A3EE9522-882F-47B0-BA7D-83420DC8577C, title "Canada Energy Regulator | La Régie
+        de l'énergie du Canada", package_count 83.
+
+probeLog:
+  - url: https://www.cer-rec.gc.ca/
+    httpStatus: 200
+  - url: https://cer-rec.gc.ca/
+    httpStatus: 200
+  - url: https://www.cer-rec.gc.ca/en/
+    httpStatus: 200
+  - url: https://api.cer-rec.gc.ca/
+    httpStatus: 'no response (curl exit, no status)'
+  - url: https://developer.cer-rec.gc.ca/
+    httpStatus: 'no response (curl exit, no status)'
+  - url: https://developers.cer-rec.gc.ca/
+    httpStatus: 'no response (curl exit, no status)'
+  - url: https://data.cer-rec.gc.ca/
+    httpStatus: 'no response (curl exit, no status)'
+  - url: https://docs.cer-rec.gc.ca/
+    httpStatus: 'no response (curl exit, no status)'
+  - url: https://open.cer-rec.gc.ca/
+    httpStatus: 'no response (curl exit, no status)'
+  - url: https://www.cer-rec.gc.ca/openapi.json
+    httpStatus: 200
+    note: Soft 404 — 4,405-byte text/html error page. Same for /swagger.json, /api-docs, /api, /api/v1.
+  - url: https://www.cer-rec.gc.ca/.well-known/openid-configuration
+    httpStatus: 200
+    note: Soft 404, same 4,405-byte page. No OIDC discovery document.
+  - url: https://www.cer-rec.gc.ca/.well-known/security.txt
+    httpStatus: 200
+    note: Soft 404, same 4,405-byte page. No security.txt.
+  - url: https://www.cer-rec.gc.ca/developers
+    httpStatus: 200
+    note: Soft 404. Same for /developer and /docs, and on apps. and apps2. hosts.
+  - url: https://www.cer-rec.gc.ca/open/
+    httpStatus: 200
+    note: >-
+      Soft 403 — HTTP 200 with a 3,411-byte Government of Canada error page whose body reads "403
+      Forbidden / There is a problem with a program on the page you are trying to reach". No directory
+      index. The tree is real and serves files, but it is not browsable — individual CSV paths resolve,
+      the directory itself does not.
+  - url: https://www.cer-rec.gc.ca/open/imports-exports/liquefied-natural-gas-exports-annual.csv
+    httpStatus: 200
+    bytes: 10110
+    note: 'application/octet-stream; parsed as CSV, header: Year, Flow, Terminal, Volume (10^3 m3), Volume (MCF).'
+  - url: https://www.cer-rec.gc.ca/en/data-analysis/
+    httpStatus: 200
+  - url: https://www.cer-rec.gc.ca/en/data-visualization/
+    httpStatus: 200
+  - url: https://www.cer-rec.gc.ca/en/about/open-government/
+    httpStatus: 200
+  - url: https://www.cer-rec.gc.ca/en/safety-environment/industry-performance/interactive-pipeline/index.html
+    httpStatus: 200
+    note: Embeds the ArcGIS Online web app; this is how the CER ArcGIS organization was discovered.
+  - url: https://www.cer-rec.gc.ca/en/terms-conditions.html
+    httpStatus: 200
+  - url: https://apps.cer-rec.gc.ca/REGDOCS/Home/Index
+    httpStatus: 200
+  - url: https://apps.cer-rec.gc.ca/ERS/
+    httpStatus: 200
+  - url: https://apps.cer-rec.gc.ca/CommodityStatistics/Statistics.aspx?language=english
+    httpStatus: 200
+    note: ASP.NET WebForms application. No JSON, CSV or API endpoint referenced in the page.
+  - url: https://apps2.cer-rec.gc.ca/pipeline-incidents
+    httpStatus: 200
+    note: >-
+      ASP.NET WebForms with a bundled JS front end. No .json, .csv or .geojson URL appears in the markup;
+      no public data endpoint behind it.
+  - url: https://apps2.cer-rec.gc.ca/berdi/
+    httpStatus: 200
+    note: >-
+      BERDI (Biophysical, Socio-economic and Regional Data and Information) is a React/Apollo app. Its
+      bundle.js references an Apollo Client with the default relative uri "/graphql". POST to
+      https://apps2.cer-rec.gc.ca/berdi/graphql got no response, /berdi/api/graphql returned 404, and
+      https://apps2.cer-rec.gc.ca/graphql 302-redirected to www.cer-rec.gc.ca/graphql. No reachable,
+      documented GraphQL endpoint was confirmed, so none is listed as an API. Recorded here only so the
+      next reviewer does not have to re-derive it.
+  - url: https://neb-gis.maps.arcgis.com/
+    httpStatus: 200
+  - url: https://neb-gis.maps.arcgis.com/sharing/rest/portals/self?f=json
+    httpStatus: 200
+    note: 'ArcGIS Online Sharing REST API readable anonymously; access: public.'
+  - url: https://neb-gis.maps.arcgis.com/sharing/rest/content/items/2d11fd4e6a7a4f4ba7fe6bdf51ae52de?f=json
+    httpStatus: 200
+    note: 'Item "Interactive Pipeline Map (EN)-v2021a", orgId vNzamREXvX2WcX6d.'
+  - url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services?f=json
+    httpStatus: 200
+    note: 23 public FeatureServers.
+  - url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Incident_Data_English_20191007_View/FeatureServer/0/query?where=1=1&returnCountOnly=true&f=json
+    httpStatus: 200
+    note: '{"count":1899} — anonymous query confirmed working.'
+  - url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services/Prov_Pipe_Status/FeatureServer/0/query?where=1=1&returnCountOnly=true&f=json
+    httpStatus: 200
+    note: '{"count":43}'
+  - url: https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/CER_Assessments_EN/MapServer?f=json
+    httpStatus: 200
+  - url: https://maps-cartes.services.geo.ca/server_serveur/services/NRCan/CER_Assessments_EN/MapServer/WMSServer?request=GetCapabilities&service=WMS&version=1.3.0
+    httpStatus: 200
+  - url: https://open.canada.ca/data/api/3/action/organization_show?id=cer-rec
+    httpStatus: 200
+  - url: https://open.canada.ca/data/api/3/action/package_search?fq=owner_org:A3EE9522-882F-47B0-BA7D-83420DC8577C&rows=100
+    httpStatus: 200
+    note: 83 datasets, 944 resources, all ca-ogl-lgo.
+  - url: https://open.canada.ca/data/api/3/action/package_search (no browser User-Agent)
+    httpStatus: 200
+    note: >-
+      WAF false-positive — returns an HTML "Request Rejected" body under HTTP 200. A browser-like
+      User-Agent is required. Recorded because it will break naive clients silently.
+  - url: https://open.canada.ca/data/en/organization/cer-rec
+    httpStatus: 200
+  - url: https://energy-information.canada.ca/en
+    httpStatus: 200
+    note: >-
+      Canadian Centre for Energy Information — a StatCan-led collaboration the CER participates in. No
+      API or developer resources documented; it points to a .Stat Suite Data Explorer at
+      de-ccei.statcan.gc.ca. Not attributed to the CER and not listed in apis.yml.
+  - url: https://de-ccei.statcan.gc.ca/?lc=en&pg=0
+    httpStatus: 200
+    note: >-
+      .Stat Suite SPA. /rest/dataflow and /dotstatsuite-config/configs.json both returned the SPA shell
+      rather than SDMX; no anonymously reachable SDMX endpoint was confirmed. Statistics Canada
+      infrastructure, out of scope for this profile.
+  - url: https://api.github.com/users/CER-REC
+    httpStatus: 200
+    note: >-
+      GitHub user (not organization) CER-REC, 9 public repositories — pipeline-profiles, conditions,
+      incidents-pipeliniers_pipeline-incidents, energy-futures-vis-avenir-energetique, Energy-Indicators,
+      BERDI_CIBER, esa-data-bank_banque-donnees-ees, importations-exportations_imports-exports,
+      screenshot-service. Front ends and data-extraction tooling, not API definitions.
+  - url: https://api.github.com/users/NEBGitHub
+    httpStatus: 200
+    note: 5 repositories under the predecessor National Energy Board identity.
+  - url: https://api.github.com/orgs/canada-energy-regulator
+    httpStatus: 404
+    note: Also 404 for orgs/cer-rec, orgs/CanadaEnergyRegulator and orgs/NEBGitHub.
+
+sources:
+  - url: https://open.canada.ca/data/api/3/action/package_search?fq=owner_org:A3EE9522-882F-47B0-BA7D-83420DC8577C&rows=100
+    type: APIReference
+    note: Primary evidence for the open-data finding — 83 datasets, 944 resources, all OGL-Canada.
+  - url: https://services5.arcgis.com/vNzamREXvX2WcX6d/arcgis/rest/services?f=json
+    type: APIReference
+    note: Primary evidence for the only CER-operated API surface — 23 public feature services.
+  - url: https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/CER_Assessments_EN/MapServer?f=json
+    type: APIReference
+    note: CER assessments layer on the Federal Geospatial Platform, ArcGIS REST and OGC WMS 1.3.0.
+  - url: https://www.cer-rec.gc.ca/en/about/open-government/
+    type: Documentation
+    note: The CER's own open government page, which points entirely at open.canada.ca.
+  - url: https://www.cer-rec.gc.ca/en/data-analysis/
+    type: Documentation
+    note: The CER data hub. Names every data product and mentions no API.
+  - url: https://www.oeb.ca/consumer-information-and-protection/green-button
+    type: Documentation
+    note: >-
+      Ontario Energy Board Green Button page — evidence that Canada's only energy consumer data mandate
+      sits with a provincial regulator, not with the CER. Established via web search, not fetched here.
+  - url: https://github.com/CER-REC
+    type: GitHubOrganization
+    note: 9 public repositories; visualization front ends and data extraction tooling.
+
+actions:
+  apisYmlCreated: true
+  readmeCreated: true
+  openapiHarvested: false
+  specsCount: 0
+  apisListed: 3
+  fabricated: none
+  omissions: >-
+    The Canadian Centre for Energy Information and its .Stat Suite explorer are Statistics Canada
+    properties and are not attributed to the CER. Ontario's Green Button implementations belong to the
+    Ontario utility and OEB profiles, not to this federal regulator, and no Ontario utility endpoint was
+    probed here. The undocumented BERDI GraphQL backend is recorded in the probe log but is deliberately
+    not listed as an API because it is neither documented nor anonymously reachable.
