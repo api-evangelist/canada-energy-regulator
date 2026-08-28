@@ -23,6 +23,19 @@ description: >-
   visualizations on GitHub. What it does not have is a developer portal, an OpenAPI definition, an API key,
   a rate-limit policy, or a single machine-readable path to an individual customer's usage or billing data.
   No mandate obliges it to have one. Home market Canada.
+deliveryModel:
+  model: saas
+  license: Open Government Licence - Canada
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - license
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.cer-rec.gc.ca/global/images/logo_cer_en.png
 tags:
 - Energy
