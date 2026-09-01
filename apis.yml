@@ -132,7 +132,7 @@ apis:
   - type: APIReference
     name: ArcGIS MapServer descriptor (captured verbatim 2026-07-27)
     url: contracts/canada-energy-regulator-cer-assessments-mapserver.json
-  - type: APIReference
+  - type: GetCapabilities
     name: OGC WMS 1.3.0 GetCapabilities (captured verbatim 2026-07-27)
     url: contracts/canada-energy-regulator-cer-assessments-wms-capabilities.xml
 - aid: canada-energy-regulator:cer-open-data-ckan
