@@ -131,6 +131,12 @@ apis:
   baseURL: https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/CER_Assessments_EN/MapServer
   tags:
   - Geospatial
+  - Assessment
+  - WMS
+  - OGC
+  - Open Data
+  tags_raw:
+  - Geospatial
   - Assessments
   - WMS
   - OGC
