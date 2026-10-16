@@ -2,6 +2,13 @@
   "repo": "canada-energy-regulator",
   "feeds": [
     {
+      "source": "https://www.cer-rec.gc.ca/en/about/news-room/index.html",
+      "feed_url": "https://www.cer-rec.gc.ca/en/about/news-room/index.html",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
       "source": "https://www.cer-rec.gc.ca/en/about/contact/index.html",
       "feed_url": "https://www.cer-rec.gc.ca/en/about/contact/index.html",
       "title": "",
@@ -10,5 +17,5 @@
     }
   ],
   "post_count": 0,
-  "fetched": "2026-10-03T12:30:02Z"
+  "fetched": "2026-10-10T13:15:00Z"
 }
